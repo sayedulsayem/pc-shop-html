@@ -353,4 +353,29 @@ body {
 .clients .image-wrapper > img {
   max-width: 100%;
 }
+
+.get-payment-cloud {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 72, 129, 0.7)), to(rgba(29, 72, 129, 0.7))), url("../images/Layer 28.png") no-repeat center;
+  background: linear-gradient(to right, rgba(29, 72, 129, 0.7), rgba(29, 72, 129, 0.7)), url("../images/Layer 28.png") no-repeat center;
+  padding: 100px 360px 120px;
+  text-align: center;
+}
+
+.get-payment-cloud h2 {
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 70px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.get-payment-cloud .button {
+  width: 336px;
+  margin-top: 30px;
+}
+
+.get-payment-cloud .button > a {
+  width: 336px;
+  font-size: 18px;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -301,3 +301,25 @@ body {
     }
   }
 }
+
+// Get payment cloud section starts from here
+.get-payment-cloud{
+  background: linear-gradient(to right, rgba(29, 72, 129, 0.7), rgba(29, 72, 129, 0.7)), url("../images/Layer\ 28.png") no-repeat center;
+  padding: 100px 360px 120px;
+  text-align: center;
+  h2{
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 70px;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  .button{
+    width: 336px;
+    margin-top: 30px;
+    & > a{
+      width: 336px;
+      font-size: 18px;
+    }
+  }
+}
