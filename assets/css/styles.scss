@@ -17,6 +17,36 @@ body {
   color: #9D9B9B;
   text-decoration: none;
 }
+.button{
+  width: 287px;
+    height: 66px;
+    background-color: #ffffff;
+    border: 1px solid #1295F7;
+    border-radius: 33px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    &:hover, &:active{
+        background-color: #FF9900;
+        border: 1px solid #FF9900;
+    }
+    &>a {
+      font-size: 26px;
+      line-height: 32px;
+      text-decoration: none;
+      position: absolute;
+      color: #1295F7;
+      left: 50%;
+      top: 50%;
+      width: 287px;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      &:active, &:hover{
+        color: #ffffff;
+      }
+    }
+}
 .dropdown-toggle{
   &::after{
     display: none;
@@ -138,28 +168,7 @@ body {
           max-width: 28%;
           font-weight: lighter;
         }
-        & > span{
-          width: 287px;
-          height: 66px;
-          background-color: #FF9900;
-          border-radius: 33px;
-          display: inline-block;
-          position: relative;
-          text-align: center;
-          margin-top: 40px;
-          & > a{
-            font-size: 26px;
-              line-height: 32px;
-              text-decoration: none;
-              color: #ffffff;
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              width: 287px;
-              transform: translate(-50%, -50%);
-              text-transform: uppercase;
-          }
-        }
+       
       }
       
       &>img {
@@ -228,3 +237,44 @@ body {
 }
 
 
+// Products section starts from here
+.products{
+  .row{
+    .card {
+        background-color: #F6F8FA;
+        border: 1px solid #707070;
+        padding: 45px;
+        padding-right: 0;
+        row-gap: 40px;
+    
+        &>h2 {
+          font-weight: lighter;
+          font-size: 44px;
+          line-height: 52px;
+          color: #003375;
+    
+          &>span {
+            font-weight: 600;
+          }
+        }
+    
+        p {
+          color: #06142A;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: lighter;
+        }
+      }
+  & > .col-12, & > .col-md-6{
+    &:last-child {
+        .card{
+          background-color: #ffffff;
+          border: none;
+          padding: 0 20px;
+          justify-content: center;
+          min-height: 100%;
+        }
+      }
+  }
+  }
+}
