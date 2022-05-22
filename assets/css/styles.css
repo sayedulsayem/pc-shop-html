@@ -378,4 +378,45 @@ body {
   width: 336px;
   font-size: 18px;
 }
+
+.terminals {
+  padding: 128px 0 95px;
+}
+
+.terminals h2 {
+  color: #003375;
+  font-size: 44px;
+  font-weight: lighter;
+  line-height: 52px;
+  max-width: 460px;
+}
+
+.terminals h2 > span {
+  font-weight: bold;
+}
+
+.terminals ul {
+  list-style-type: none;
+  list-style-image: url("../images/list-icon.png");
+  margin-top: 24px;
+}
+
+.terminals ul > li {
+  color: #06142A;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: lighter;
+  padding-left: 10px;
+}
+
+.terminals .button {
+  width: 305px;
+  margin-top: 35px;
+}
+
+.terminals .button > a {
+  font-size: 18px;
+  line-height: 21px;
+  width: 206px;
+}
 /*# sourceMappingURL=styles.css.map */
