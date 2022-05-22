@@ -325,4 +325,32 @@ body {
           justify-content: center;
   min-height: 100%;
 }
+
+.clients {
+  margin-top: 82px;
+  padding: 46px 0;
+  background-color: #F4F9FE;
+}
+
+.clients .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 60px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.clients .image-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.clients .image-wrapper > img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

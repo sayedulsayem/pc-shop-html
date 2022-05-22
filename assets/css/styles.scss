@@ -278,3 +278,26 @@ body {
   }
   }
 }
+
+// Clients section starts from here
+.clients{
+  margin-top: 82px;
+  padding: 46px 0;
+  background-color: #F4F9FE;
+  .image-wrapper{
+    display: flex;
+    padding: 0 60px;
+    column-gap: 60px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    & > img{
+      max-width: 100%;
+    }
+  }
+}
