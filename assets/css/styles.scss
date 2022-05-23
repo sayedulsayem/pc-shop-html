@@ -6,7 +6,7 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
-  @media (min-width: 1920px) {
+  @media (max-width: 1920px) {
     .container{
       max-width: 1576px;
     }
@@ -74,7 +74,6 @@ body {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
       border-radius: 10px;
       padding-left: 20px;
-
       &> ::placeholder {
         color: rgba(121, 121, 121, 1);
         font-weight: 400;
@@ -84,7 +83,6 @@ body {
 
       &>input {
         border: none;
-
         &:focus {
           border: none;
           outline: none;
@@ -419,4 +417,59 @@ body {
     }
   }
   
+}
+
+// Footer starts from here
+.footer{
+    padding-left: 10%;
+    padding-right: 10%;
+    p {
+        color: #70829E;
+        font-weight: lighter;
+      }
+  .get-pricing{
+    margin: 100px 0 65px;
+    padding: 50px 86px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    & > div { 
+      & > h3{
+      font-size: 31px;
+      color: #FE9900;
+      }
+      & > p{
+        color: #70829E;
+        font-weight: lighter;
+      }
+    }
+    &>.button {
+      width: 161px;
+      height: 46px;
+      margin-top: 0;
+      & > a{
+        font-size: 20px;
+      }
+    }
+  }
+  .footer-bottom{
+    border-top: 1px solid #A2A2A2;
+    padding: 50px 10%;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 10px;
+    & > li{
+      ::after{
+        content: "   |";
+        color: #A2A2A2;
+      }
+      & > a{
+        color: #A2A2A2;
+        font-size: 15px;
+        line-height: 30px;
+        text-decoration: none;
+      }
+    }
+  }
 }

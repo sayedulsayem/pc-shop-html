@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
   body .container {
     max-width: 1576px;
   }
@@ -486,5 +486,69 @@ body {
 
 .faq .accordion > .accordion-item > .accordion-collapse > .accordion-body {
   padding: 0 20px 30px;
+}
+
+.footer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footer p {
+  color: #70829E;
+  font-weight: lighter;
+}
+
+.footer .get-pricing {
+  margin: 100px 0 65px;
+  padding: 50px 86px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+}
+
+.footer .get-pricing > div > h3 {
+  font-size: 31px;
+  color: #FE9900;
+}
+
+.footer .get-pricing > div > p {
+  color: #70829E;
+  font-weight: lighter;
+}
+
+.footer .get-pricing > .button {
+  width: 161px;
+  height: 46px;
+  margin-top: 0;
+}
+
+.footer .get-pricing > .button > a {
+  font-size: 20px;
+}
+
+.footer .footer-bottom {
+  border-top: 1px solid #A2A2A2;
+  padding: 50px 10%;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.footer ul > li ::after {
+  content: "   |";
+  color: #A2A2A2;
+}
+
+.footer ul > li > a {
+  color: #A2A2A2;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
