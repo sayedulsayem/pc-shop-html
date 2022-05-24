@@ -5,20 +5,49 @@
           box-sizing: border-box;
 }
 
-body {
-  max-width: 1920px;
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
 }
 
-@media (max-width: 1920px) {
+body {
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 2500px) {
+  body .container {
+    max-width: 2126px;
+  }
+}
+
+@media (max-width: 2500px) and (max-width: 1920px) {
   body .container {
     max-width: 1576px;
   }
 }
 
+.MINGLIU {
+  font-family: "MINGLIU", sans-serif;
+}
+
+.Montserrat {
+  font-family: "Montserrat";
+}
+
+.GothamBook {
+  font-family: "GothamBook", sans-serif;
+}
+
+.ash-primary {
+  color: #9D9B9B;
+}
+
+.dark-text {
+  color: #06142A;
+}
+
 /* navigation styles start from here */
 .link {
-  color: #9D9B9B;
   text-decoration: none;
 }
 
@@ -71,7 +100,7 @@ body {
 }
 
 .nav-section {
-  padding: 45px 0;
+  padding: 45px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,34 +119,35 @@ body {
 .nav-section > .row .search-field {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
-  border-radius: 10px;
-  padding-left: 20px;
+  border-radius: 8px;
+  padding: 0 20px;
+  height: 52px;
 }
 
 .nav-section > .row .search-field > ::-webkit-input-placeholder {
   color: #797979;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 19px;
   font-size: 15px;
 }
 
 .nav-section > .row .search-field > :-ms-input-placeholder {
   color: #797979;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 19px;
   font-size: 15px;
 }
 
 .nav-section > .row .search-field > ::-ms-input-placeholder {
   color: #797979;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 19px;
   font-size: 15px;
 }
 
 .nav-section > .row .search-field > ::placeholder {
   color: #797979;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 19px;
   font-size: 15px;
 }
@@ -135,7 +165,6 @@ body {
 
 .nav-section > .row .search-field > button {
   border: none;
-  padding: 0 15px;
 }
 
 .nav-section > .row .search-field > button:hover {
@@ -169,21 +198,30 @@ body {
 
 .nav-section > .row .message {
   color: #FF9900;
-  font-size: 22px;
   line-height: 27px;
   font-style: italic;
+  font-weight: 500;
+  font-size: 150%;
 }
 
-.nav-section > .row .message > span {
-  background-color: #FF9900;
+@media (max-width: 1920px) {
+  .nav-section > .row .message {
+    font-size: 21px;
+  }
+}
+
+.nav-section > .row .message::after {
+  content: url("../images/right-arrow.png");
+  padding-left: 6px;
+}
+
+.nav-section > .row .message .tick-active {
+  background: #FF9900;
   border-radius: 100px;
+  padding: 0px 0 0 4px;
   height: 27px;
   width: 27px;
-}
-
-.nav-section > .row .message > span > img {
-  width: 20px;
-  height: 15px;
+  margin-right: 15px;
 }
 
 .cover > .caption-container {
@@ -192,15 +230,27 @@ body {
 }
 
 .cover > .caption-container > .caption {
-  padding: 80px 0 100px 15%;
+  padding: 80px 0 100px 8%;
+}
+
+@media (max-width: 1920px) {
+  .cover > .caption-container > .caption {
+    padding-left: 12%;
+  }
 }
 
 .cover > .caption-container > .caption > h1 {
   font-size: 60px;
   line-height: 72px;
   font-weight: lighter;
-  max-width: 36%;
+  max-width: 32%;
   color: #003375;
+}
+
+@media (max-width: 1920px) {
+  .cover > .caption-container > .caption > h1 {
+    max-width: 44%;
+  }
 }
 
 .cover > .caption-container > .caption > h1 > span {
@@ -211,17 +261,22 @@ body {
   color: #003375;
   font-size: 22px;
   line-height: 34px;
-  max-width: 28%;
-  font-weight: lighter;
+  max-width: 22%;
 }
 
 .cover > .caption-container > img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 58%;
+  width: 44.5%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1920px) {
+  .cover > .caption-container > img {
+    width: 61%;
+  }
 }
 
 .review {
@@ -249,18 +304,19 @@ body {
 
 .review .review-details {
   font-weight: lighter;
-  font-weight: 16px;
   line-height: 19px;
 }
 
 .review .review-details > span > span {
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .review .card {
   background-color: #FAFAFA;
-  border-color: #707070;
+  border: none;
   padding: 20px;
+  row-gap: 10px;
+  border-radius: 10px;
 }
 
 .review .card .ratings > .icon-container {
@@ -279,20 +335,22 @@ body {
 }
 
 .review .card > h2 {
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .review .card > h4 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .review .card > p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .products .row .card {
   background-color: #F6F8FA;
-  border: 1px solid #707070;
+  border: none;
+  border-radius: 0;
   padding: 45px;
   padding-right: 0;
   row-gap: 40px;
@@ -337,8 +395,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 60px;
-  -webkit-column-gap: 60px;
-          column-gap: 60px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
   overflow: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -352,6 +410,12 @@ body {
 
 .clients .image-wrapper > img {
   max-width: 100%;
+  padding-right: 40px;
+  border-right: 1px solid #707070;
+}
+
+.clients .image-wrapper > img:last-child {
+  border-right: none;
 }
 
 .get-payment-cloud {
@@ -359,6 +423,7 @@ body {
   background: linear-gradient(to right, rgba(29, 72, 129, 0.7), rgba(29, 72, 129, 0.7)), url("../images/Layer 28.png") no-repeat center;
   padding: 100px 360px 120px;
   text-align: center;
+  background-attachment: fixed;
 }
 
 .get-payment-cloud h2 {
@@ -501,8 +566,9 @@ body {
 .footer .get-pricing {
   margin: 100px 0 65px;
   padding: 50px 86px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.17);
+  border: 1px solid #CFD8E3;
   border-radius: 10px;
 }
 
@@ -520,6 +586,7 @@ body {
   width: 161px;
   height: 46px;
   margin-top: 0;
+  border-radius: 5px;
 }
 
 .footer .get-pricing > .button > a {
@@ -527,8 +594,9 @@ body {
 }
 
 .footer .footer-bottom {
-  border-top: 1px solid #A2A2A2;
-  padding: 50px 10%;
+  border-top: 1px solid #D5D5D5;
+  margin: 0px 2% 50px;
+  padding-top: 50px;
 }
 
 .footer ul {
@@ -543,6 +611,10 @@ body {
 .footer ul > li ::after {
   content: "   |";
   color: #A2A2A2;
+}
+
+.footer ul > li :last-child ::after {
+  content: "";
 }
 
 .footer ul > li > a {
