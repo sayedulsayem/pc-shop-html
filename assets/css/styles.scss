@@ -193,6 +193,9 @@ $font-GothamBook: 'GothamBook', sans-serif;
       @media (max-width: 1920px) {
         padding-left: 12%;
       }
+      @media (max-width: 1600px) {
+        padding-left: 3%;
+      }
       & > h1 {
           font-size: 60px;
           line-height: 72px;
@@ -200,6 +203,10 @@ $font-GothamBook: 'GothamBook', sans-serif;
           max-width: 32%;
           @media (max-width: 1920px) {
               max-width: 44%;;
+          }
+          @media (max-width: 1600px) {
+            max-width: 40%;
+            font-size: 50px;
           }
           color: #003375;
           & > span{
@@ -212,7 +219,9 @@ $font-GothamBook: 'GothamBook', sans-serif;
           font-size: 22px;
           line-height: 34px;
           max-width: 22%;
-
+          @media (max-width: 1600px) {
+            max-width: 32%;
+          }
         }
        
       }
@@ -224,6 +233,9 @@ $font-GothamBook: 'GothamBook', sans-serif;
         width: 44.5%;
         @media (max-width: 1920px) {
           width: 61%;
+        }
+        @media (max-width: 1600px) {
+          width: 67%;
         }
         object-fit: cover;
       }
