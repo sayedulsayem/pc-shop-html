@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='./assets/fonts/GothamBook.ttf?family=GothamBook' rel='stylesheet'>
@@ -17,101 +18,103 @@
     <!-- Navigation Menu Section start -->
     <section class="nav-section-wrapper">
         <div class="container nav-section">
-        <div class="row">
-            <div class="col-7 col-md-3 d-flex align-items-center logo-container">
-                <div class="logo">
-                    <img src="./assets/images/PC-Logo copy.png" class="img-fluid" alt="PaymentCloud Logo">
-                </div>
-                <img src="./assets/images/divider.png" alt="">
-                <a class="ash-primary fw-normal link" href="#">Shop</a>
-            </div>
-            <div class="d-none col-md-6 d-md-flex align-items-center">
-                <div class="search-field input-group">
-                    <input type="text" class="form-control MINGLIU" placeholder="Find the best for your business..."
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                        <img src="./assets/images/Layer 60.png" alt="">
-                    </button>
-                </div>
-            </div>
-            <div
-                class="col-12 col-md-3 position-relative d-block d-md-flex flex-md-row justify-content-start justify-content-md-end align-items-center gap-2">
-                <nav class="navbar navbar-expand-md ml-0 mr-auto bg-transparent">
-                    <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="fw-semibold nav-link text-end active dark-text" href=""
-                                    aria-current="page">+88945308</a>
-                            </li>
-                            <li class="nav-item d-none d-md-block">
-                                <img src="./assets/images/divider.png" alt="">
-                            </li>
-                            <li class="nav-item">
-                                <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
-                            </li>
-                        </ul>
+            <div class="row">
+                <div class="col-7 col-md-3 d-flex align-items-center logo-container">
+                    <div class="logo">
+                        <img src="./assets/images/PC-Logo copy.png" class="img-fluid" alt="PaymentCloud Logo">
                     </div>
-                </nav>
-                <span class="cart-icon-container position-relative mx-2">
-                    <img src="./assets/images/Layer 8.png" alt="">
-                    <span class="cart-total-container position-absolute">
-                        <span class="cart-total d-flex align-items-center justify-content-center">0</span>
+                    <img src="./assets/images/divider.png" alt="">
+                    <a class="ash-primary fw-normal link" href="#">Shop</a>
+                </div>
+                <div class="d-none col-md-6 d-md-flex align-items-center">
+                    <div class="search-field input-group">
+                        <input type="text" class="form-control MINGLIU" placeholder="Find the best for your business..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <img src="./assets/images/Layer 60.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-3 position-relative d-block d-md-flex flex-md-row justify-content-start justify-content-md-end align-items-center gap-2">
+                    <nav class="navbar navbar-expand-md ml-0 mr-auto bg-transparent">
+                        <button class="navbar-toggler position-absolute top-0 end-0" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="fw-semibold nav-link text-end active dark-text" href=""
+                                        aria-current="page">+88945308</a>
+                                </li>
+                                <li class="nav-item d-none d-md-block">
+                                    <img src="./assets/images/divider.png" alt="">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <span class="cart-icon-container position-relative mx-2">
+                        <img src="./assets/images/Layer 8.png" alt="">
+                        <span class="cart-total-container position-absolute">
+                            <span class="cart-total d-flex align-items-center justify-content-center">0</span>
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6 d-flex align-items-center">
-                <nav class="navbar navbar-expand-sm bg-transparent">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle Montserrat d-flex gap-3 align-items-center" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>shop by type</span>
-                                    <img src="./assets/images/down-arrow.svg" alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item Montserrat" href="#">Action</a></li>
-                                    <li><a class="dropdown-item Montserrat" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item Montserrat" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle Montserrat d-flex gap-3 align-items-center" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>shop by brand</span>
-                                    <img class="dropdown-icon" src="./assets/images/down-arrow.svg" alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item Montserrat" href="#">Action</a></li>
-                                    <li><a class="dropdown-item Montserrat" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <nav class="navbar navbar-expand-sm bg-transparent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle Montserrat d-flex gap-3 align-items-center"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>shop by type</span>
+                                        <img src="./assets/images/down-arrow.svg" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item Montserrat" href="#">Action</a></li>
+                                        <li><a class="dropdown-item Montserrat" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item Montserrat" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle Montserrat d-flex gap-3 align-items-center"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>shop by brand</span>
+                                        <img class="dropdown-icon" src="./assets/images/down-arrow.svg" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item Montserrat" href="#">Action</a></li>
+                                        <li><a class="dropdown-item Montserrat" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+                    <p class="message">
+                        <img class="tick-active" src="./assets/images/Layer 61.svg" alt="">
+                        GET YOUR FREE TERMINAL WITH A
+                        MERCHANT ACCOUNT
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
-                <p class="message">
-                    <img class="tick-active" src="./assets/images/Layer 61.svg" alt="">
-                    GET YOUR FREE TERMINAL WITH A
-                    MERCHANT ACCOUNT
-                </p>
-            </div>
-        </div>
         </div>
     </section>
     <!-- Navigation Menu Section end -->
@@ -161,7 +164,7 @@
                     <p class="review-details"><span>TrustScore <span>4.4</span></span> | <span><span>157</span>
                             reviews</span></p>
                 </div>
-                <div class="col d-none d-sm-block">
+                <div class="col d-none d-md-block">
                     <div class="card">
                         <div class="d-flex flex-fill justify-content-between align-items-center">
                             <div class="ratings d-flex align-items-center justify-content-center">
@@ -190,7 +193,7 @@
                         <p>There was excellent customer service and everyone explained the process clearly.</p>
                     </div>
                 </div>
-                <div class="col d-none d-sm-block">
+                <div class="col d-none d-md-block">
                     <div class="card">
                         <div class="d-flex flex-fill justify-content-between align-items-center">
                             <div class="ratings d-flex align-items-center justify-content-center">
@@ -219,7 +222,7 @@
                         <p>There was excellent customer service and everyone explained the process clearly.</p>
                     </div>
                 </div>
-                <div class="col d-none d-sm-block">
+                <div class="col d-none d-md-block">
                     <div class="card">
                         <div class="d-flex flex-fill justify-content-between align-items-center">
                             <div class="ratings  d-flex align-items-center justify-content-center">
@@ -248,7 +251,7 @@
                         <p>There was excellent customer service and everyone explained the process clearly.</p>
                     </div>
                 </div>
-                <div class="col d-none d-sm-block">
+                <div class="col d-none d-md-block">
                     <div class="card">
                         <div class="d-flex flex-fill justify-content-between align-items-center">
                             <div class="ratings d-flex align-items-center justify-content-center">
@@ -358,7 +361,47 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="image-wrapper">
+                    <div class="swiper mySwiper d-md-none">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/Layer 73.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="./assets/images/right.png" alt="">
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="./assets/images/left.png" alt="">
+                        </div>
+                    </div>
+                    <div class="image-wrapper d-none d-md-flex">
                         <img src="./assets/images/Layer 73.png" alt="">
                         <img src="./assets/images/Layer 73.png" alt="">
                         <img src="./assets/images/Layer 73.png" alt="">
@@ -540,6 +583,37 @@
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+               
+            },
+        });
+    </script>
+
 </body>
 
 </html>
