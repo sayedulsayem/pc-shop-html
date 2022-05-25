@@ -15,7 +15,8 @@
 
 <body>
     <!-- Navigation Menu Section start -->
-    <section class="container nav-section">
+    <section class="nav-section-wrapper">
+        <div class="container nav-section">
         <div class="row">
             <div class="col-7 col-md-3 d-flex align-items-center logo-container">
                 <div class="logo">
@@ -44,18 +45,18 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="fw-semibold nav-link active dark-text" href=""
+                                <a class="fw-semibold nav-link text-end active dark-text" href=""
                                     aria-current="page">+88945308</a>
                             </li>
+                            <li class="nav-item d-none d-md-block">
+                                <img src="./assets/images/divider.png" alt="">
+                            </li>
                             <li class="nav-item">
-                                <a class="fw-semibold nav-link dark-text" href="">YOUR CART</a>
+                                <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <!-- <a class="fw-semibold dark-text text-decoration-none" href="">+88945308</a> -->
-                <!-- <img src="./assets/images/divider.png" alt=""> -->
-                <!-- <a class="fw-semibold dark-text text-decoration-none" href="">YOUR CART</a> -->
                 <span class="cart-icon-container position-relative mx-2">
                     <img src="./assets/images/Layer 8.png" alt="">
                     <span class="cart-total-container position-absolute">
@@ -111,6 +112,7 @@
                 </p>
             </div>
         </div>
+        </div>
     </section>
     <!-- Navigation Menu Section end -->
 
@@ -137,7 +139,7 @@
     <section class="review">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
-                <div class="col">
+                <div class="col d-flex flex-column align-items-center">
                     <img src="./assets/images/Layer 66.png" alt="">
                     <div class="ratings">
                         <div class="icon-container">
@@ -287,7 +289,7 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <h2 class="text-center">POS <span>Systems</span></h2>
-                        <div class="row">
+                        <div class="row flex-column-reverse flex-md-column">
                             <div class="col-12 col-md-6">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna
@@ -303,7 +305,7 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <h2 class="text-center">POS <span>Systems</span></h2>
-                        <div class="row">
+                        <div class="row flex-column-reverse flex-md-column">
                             <div class="col-12 col-md-6">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna
@@ -319,7 +321,7 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <h2 class="text-center">POS <span>Systems</span></h2>
-                        <div class="row">
+                        <div class="row flex-column-reverse flex-md-column">
                             <div class="col-12 col-md-6">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna
@@ -342,7 +344,7 @@
                             pariatur. Excepteur sint
                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
                         </p>
-                        <a href=""><span>View them all <img class="img-fluid m-4"
+                        <a href=""><span>View them all <img class="img-fluid d-none d-md-inline m-4"
                                     src="./assets/images/Layer 72 copy 2.png" alt=""></span></a>
                     </div>
                 </div>
@@ -500,7 +502,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="get-pricing d-flex align-items-center justify-content-between">
+                    <div class="get-pricing d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <div>
                             <h3>Ready To Get Started?</h3>
                             <p>Compare our rates to others you've found.</p>
@@ -517,7 +519,7 @@
                         <p>All Rights Reserved.</p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center gap-5">
+                <div class="col d-flex align-items-center justify-content-center gap-4">
                     <img src="./assets/images/Layer 50.png" alt="">
                     <img src="./assets/images/Layer 51.png" alt="">
                     <img src="./assets/images/Layer 52.png" alt="">
