@@ -698,28 +698,44 @@ body {
     border-top: 1px solid #D5D5D5;
     margin: 0px 2% 50px;
     padding-top: 50px;
-  }
-  ul{
-    list-style-type: none;
-    display: flex;
-    column-gap: 10px;
-    padding-left: 0;
-    & > li{
-      ::after{
-        content: "   |";
-        color: #A2A2A2;
+    // row-gap: 0;
+    @media (max-width: 767px) {
+        row-gap: 40px;
       }
-      :last-child {
-        ::after {
-          content: "";
+    p {
+        @media (max-width: 767px) {
+          font-size: 14.5px;
+          text-align: center;
+          line-height: 23.42px;
         }
       }
-      & > a{
-        color: #A2A2A2;
-        font-size: 15px;
-        line-height: 30px;
-        text-decoration: none;
+    
+      ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 10px;
+        padding-left: 0;
+    
+        &>li {
+          ::after {
+            content: "   |";
+            color: #A2A2A2;
+          }
+    
+          :last-child {
+            ::after {
+              content: "";
+            }
+          }
+    
+          &>a {
+            color: #A2A2A2;
+            font-size: 15px;
+            line-height: 30px;
+            text-decoration: none;
+          }
+        }
       }
-    }
   }
+ 
 }

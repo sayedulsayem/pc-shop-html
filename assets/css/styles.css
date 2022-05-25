@@ -902,7 +902,21 @@ body {
   padding-top: 50px;
 }
 
-.footer ul {
+@media (max-width: 767px) {
+  .footer .footer-bottom {
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-bottom p {
+    font-size: 14.5px;
+    text-align: center;
+    line-height: 23.42px;
+  }
+}
+
+.footer .footer-bottom ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,16 +926,16 @@ body {
   padding-left: 0;
 }
 
-.footer ul > li ::after {
+.footer .footer-bottom ul > li ::after {
   content: "   |";
   color: #A2A2A2;
 }
 
-.footer ul > li :last-child ::after {
+.footer .footer-bottom ul > li :last-child ::after {
   content: "";
 }
 
-.footer ul > li > a {
+.footer .footer-bottom ul > li > a {
   color: #A2A2A2;
   font-size: 15px;
   line-height: 30px;
