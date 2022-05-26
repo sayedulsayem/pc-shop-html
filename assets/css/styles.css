@@ -955,6 +955,7 @@ body {
 .footer .get-pricing > div > h3 {
   font-size: 31px;
   color: #FE9900;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
