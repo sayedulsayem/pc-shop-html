@@ -280,6 +280,18 @@ body {
 }
 
 .nav-section-wrapper .nav-section > .row .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-section-wrapper .nav-section > .row .message > p {
   color: #FF9900;
   line-height: 27px;
   font-style: italic;
@@ -287,32 +299,32 @@ body {
 }
 
 @media (max-width: 1920px) {
-  .nav-section-wrapper .nav-section > .row .message {
+  .nav-section-wrapper .nav-section > .row .message > p {
     font-size: 22px;
   }
 }
 
 @media (max-width: 1600px) {
-  .nav-section-wrapper .nav-section > .row .message {
+  .nav-section-wrapper .nav-section > .row .message > p {
     font-size: 20px;
   }
 }
 
 @media (max-width: 1440px) {
-  .nav-section-wrapper .nav-section > .row .message {
+  .nav-section-wrapper .nav-section > .row .message > p {
     font-size: 19px;
   }
 }
 
 @media (max-width: 767px) {
-  .nav-section-wrapper .nav-section > .row .message {
+  .nav-section-wrapper .nav-section > .row .message > p {
     font-size: 16px;
   }
 }
 
 .nav-section-wrapper .nav-section > .row .message::after {
   content: url("../images/right-arrow.png");
-  padding-left: 6px;
+  padding-left: 10px;
 }
 
 .nav-section-wrapper .nav-section > .row .message .tick-active {
