@@ -430,7 +430,7 @@ body {
 
 @media (max-width: 1920px) {
   .cover > .caption-container > img {
-    width: 59%;
+    width: 59.5%;
   }
 }
 
@@ -987,6 +987,7 @@ body {
 
 .footer .get-pricing > .btn-yellow > a, .footer .get-pricing > .btn-white > a {
   font-size: 20px;
+  width: 162px;
 }
 
 .footer .footer-bottom {

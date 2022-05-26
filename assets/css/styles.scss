@@ -320,7 +320,7 @@ body {
         top: 0;
         width: 43%;
         @media (max-width: 1920px) {
-          width: 59%;
+          width: 59.5%;
         }
         @media (max-width: 1600px) {
           width: 67%;
@@ -769,6 +769,7 @@ body {
       border-radius: 5px;
       & > a{
         font-size: 20px;
+        width: 162px;
       }
     }
   }
