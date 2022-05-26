@@ -34,7 +34,7 @@ body {
 .link{
   text-decoration: none;
 }
-.button{
+.btn-yellow, .btn-white{
     width: 287px;
     height: 66px;
     background-color: #ffffff;
@@ -51,6 +51,9 @@ body {
     &:hover, &:active{
         background-color: #FF9900;
         border: 1px solid #FF9900;
+        & > a{
+          color: #ffffff;
+        }
     }
     &>a {
       font-size: 26px;
@@ -66,10 +69,22 @@ body {
       @media (max-width: 767px) {
           font-size: 16px;
       }
-      &:active, &:hover{
-        color: #ffffff;
-      }
     }
+}
+.btn-yellow{
+  background-color: #FF9900;
+  border: 1px solid #FF9900;
+  & > a{
+    color: #fff;
+  }
+  &:hover, &:active{
+    background-color: #ffffff;
+    border: 1px solid #1295F7;
+    & > a{
+      color: #1295F7;
+    }
+}
+
 }
 .dropdown-toggle{
   &::after{
@@ -97,6 +112,7 @@ body {
   padding: 45px 70px;
   box-shadow: 2.5px 4.33px 5px 0px #00000012;
   position: relative;
+  background-color: #f6f8fa;
   z-index: 1;
   @media (max-width: 767px) {
       padding: 20px;
@@ -112,6 +128,8 @@ body {
   
           &>a {
             font-family: "GothamBook", sans-serif;
+            font-size: 28px;
+            color: 989b9b;
           }
         }
   
@@ -183,6 +201,11 @@ body {
                 &>.nav-link {
                   padding-left: 0;
                   padding-right: 0;
+                  & > span{
+                    font-size: 25px;
+                    line-height: 29px;
+                    color: #797979;
+                  }
                 }
               }
             }
@@ -318,9 +341,9 @@ body {
   padding: 115px 0 120px 0;
   .ratings{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin: 10px 0;
-    & > .icon-container{
+    & > .icon-container, & > .icon-container-half, & > .icon-container-blank {
       height: 54px;
       width: 54px;
       background-color: #00B67A;
@@ -329,24 +352,33 @@ body {
         max-width: 100%;
       }
     }
+
+    & > .icon-container-half{
+      background: linear-gradient(to right, #00B67A 50%, #dcdce6 50%);
+    }
+    & > .icon-container-blank{
+      background-color: #dcdce6;
+    }
+
   }
   .review-details{
     font-weight: lighter;
     line-height: 19px;
     & > span{
       & > span{
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }
   .card{
     background-color: #FAFAFA;
-    border: none;
+    border: 1px solid #DDE0E3;
     padding: 20px;
     row-gap: 10px;
     border-radius: 10px;
     .ratings{
-      & > .icon-container{
+      margin: 0;
+      & > .icon-container, & > .icon-container-half, & > .icon-container-blank{
         height: 20px;
         width: 20px;
         padding: 3px;
@@ -354,16 +386,22 @@ body {
         align-items: center;
         justify-content: center;
       }
+      & > .icon-container-half{
+        background: linear-gradient(to right, #00B67A 50%, #dcdce6 50%);
+      }
+      & > .icon-container-blank{
+        background-color: #dcdce6;
+      }
     }
     & > h2{
-      font-size: 16px;
+      font-size: 12px;
       margin-bottom: 20px;
     }
     & > h4{
-      font-size: 14px;
+      font-size: 12px;
     }
-    & > p{
-      font-size: 14px;
+    p{
+      font-size: 12px;
     }
   }
 }
@@ -399,6 +437,11 @@ body {
         }
 
         .button{
+          width: 285px;
+          height: 62px;
+          & > a{
+            font-size: 18px;
+          }
           @media (max-width: 767px) {
               width: 284px;
               height: 47px;
@@ -447,7 +490,7 @@ body {
 // Clients section starts from here
 .clients{
   margin-top: 82px;
-  padding: 46px 0;
+  padding: 38px 0;
   background-color: #F4F9FE;
   .swiper {
       width: 100%;
@@ -493,7 +536,7 @@ body {
     & > img{
       max-width: 100%;
       padding-right: 40px;
-      border-right: 1px solid #707070;
+      border-right: 1px solid #cfdbe9;
       &:last-child{
         border-right: none;
       }
@@ -534,7 +577,7 @@ body {
         padding: 0;
       }
   }
-  .button{
+  .btn-yellow, .btn-white{
     width: 336px;
     margin-top: 30px;
     & > a{
@@ -552,7 +595,10 @@ body {
     font-size: 44px;
     font-weight: lighter;
     line-height: 52px;
-    max-width: 460px;
+    max-width: 500px;
+    @media (max-width: 1920px) {
+      max-width: 100%;
+    }
     @media (max-width: 767px) {
         font-size: 26px;
         line-height: 32px;
@@ -573,7 +619,7 @@ body {
         padding-left: 10px;
       }
     }
-  .button{
+  .btn-yellow, .btn-white{
     width: 305px;
     height: 62px;
     margin-top: 35px;
@@ -593,7 +639,7 @@ body {
     font-size: 44px;
     line-height: 52px;
     font-weight: lighter;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     text-align: center;
     color: #003375;
     @media (max-width: 767px) {
@@ -609,7 +655,7 @@ body {
     & > .accordion-item{
       border: none;
       background-color: transparent;
-      border-bottom: 1px solid #003375;
+      border-bottom: 1px solid #dbe5f0;
       &:last-child{
         border-bottom: none;
       }
@@ -623,7 +669,7 @@ body {
           color: #003375;
           font-weight: 600;
           box-shadow: none;
-          padding: 30px 20px; 
+          padding: 20px 20px 42px; 
           @media (max-width: 767px) {
               font-size: 20px;
               line-height: 24px;
@@ -646,6 +692,8 @@ body {
       & > .accordion-collapse{
         & > .accordion-body{
           padding: 0 20px 30px;
+          font-size: 18px;
+          font-weight: lighter;
           @media (max-width: 767px) {
               font-size: 14px;
               line-height: 22px;
@@ -714,7 +762,7 @@ body {
         }
       }
     }
-    &>.button {
+    &>.btn-yellow, & > .btn-white {
       width: 161px;
       height: 46px;
       margin-top: 0;
@@ -725,7 +773,7 @@ body {
     }
   }
   .footer-bottom{
-    border-top: 1px solid #D5D5D5;
+    border-top: 1px solid #e5e5e5;
     margin: 0px 2% 50px;
     padding-top: 50px;
     // row-gap: 0;
