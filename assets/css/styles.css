@@ -1132,6 +1132,46 @@ body
     }
 }
 
+.woocommerce-checkout .site-content
+{
+    margin-top: 60px;
+}
+.woocommerce-checkout .site-content .woocommerce-billing-fields
+{
+    margin-top: 65px;
+}
+.woocommerce-checkout .site-content .woocommerce-billing-fields h3
+{
+    font-size: 18px;
+}
+.woocommerce-checkout .site-content #order_review_heading
+{
+    margin-top: 45px;
+}
+
+.billing-input-fields
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.billing-input-fields input,
+.billing-input-fields select
+{
+    background-color: #f6f8fa;
+}
+.billing-input-fields label + input
+{
+    margin-top: 10px;
+}
+.billing-input-fields label + select
+{
+    margin-top: 10px;
+}
+.billing-input-fields input + input
+{
+    margin-top: 10px;
+}
+
 @media (max-width: 1440px)
 {
     .footer
