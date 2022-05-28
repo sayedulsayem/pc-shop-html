@@ -335,6 +335,11 @@ body {
             max-width: 40%;
             font-size: 50px;
           }
+          @media (max-width: 1440px) {
+            max-width: 34%;
+            font-size: 40px;
+            line-height: 51px;
+          }
           @media (max-width: 1024px) {
             max-width: 38%;
             font-size: 30px;
@@ -361,6 +366,9 @@ body {
           max-width: 22%;
           @media (max-width: 1600px) {
             max-width: 32%;
+          }
+          @media (max-width: 1440px) {
+            font-size: 18px;
           }
           @media (max-width: 1024px) {
             max-width: 40%;
@@ -412,7 +420,7 @@ body {
     & > .row{
       & > .col{
         & > img{
-          @media (max-width: 1024px) {
+          @media (max-width: 1440px) {
               max-width: 55%;
             }
         }
@@ -427,6 +435,11 @@ body {
     & > .icon-container, & > .icon-container-half, & > .icon-container-blank {
       height: 54px;
       width: 54px;
+      @media (max-width: 1440px) {
+        height: 40px;
+        width: 40px;
+        padding: 6px;
+      }
       @media (max-width: 1024px) {
         height: 30px;
         width: 30px;
@@ -451,6 +464,9 @@ body {
   .review-details{
     font-weight: lighter;
     line-height: 19px;
+    @media (max-width: 1440px) {
+       font-size: 14px;;
+      }
     @media (max-width: 1024px) {
        font-size: 10px;;
       }
@@ -936,6 +952,9 @@ body {
         margin: 0 5% 50px;
         padding-top: 30px;
         margin: 0px 12% 30px;
+      }
+    @media (max-width: 600px) {
+        margin: 0px 4% 30px;
       }
     p {
         @media (max-width: 1024px) {
