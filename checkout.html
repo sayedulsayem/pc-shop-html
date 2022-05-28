@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='./assets/fonts/GothamBook.ttf?family=GothamBook' rel='stylesheet'>
+    <link href='./assets/fonts/MINGLIU.ttf?family=MINGLIU' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>PC Shop</title>
+</head>
+
+<body class="woocommerce-checkout">
+    <!-- Navigation Menu Section start -->
+    <section class="nav-section-wrapper">
+        <div class="container nav-section">
+            <div class="row">
+                <div class="col-7 col-md-3 d-flex align-items-center logo-container">
+                    <div class="logo">
+                        <img src="./assets/images/PC-Logo copy.png" class="img-fluid" alt="PaymentCloud Logo">
+                    </div>
+                    <img src="./assets/images/divider.png" alt="">
+                    <a class="ash-primary fw-normal link" href="#">shop</a>
+                </div>
+                <div class="col-12 col-md-9 d-flex align-items-center justify-content-end">
+                    <div class="message">
+                        <img class="tick-active" src="./assets/images/Layer 61.svg" alt="">
+                        <p>
+                            GET YOUR FREE TERMINAL WITH A
+                            MERCHANT ACCOUNT
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Menu Section end -->
+
+    <div id="content" class="site-content container" tabindex="-1">
+        <div class="row">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main" role="main">
+                    <article id="post-8" class="post-8 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <div class="woocommerce">
+                                <a class="link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21" height="21" viewBox="0 0 21 21">
+                                        <image id="Layer_66" data-name="Layer 66" width="21" height="21"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABHNCSVQICAgIfAhkiAAAA+lJREFUOE99lX1oVWUcxz+/c+49925rrq63NZbbconMjcKSFHozw6ilkhWR/hP1hwQ1o/VftFZ6IwpRK41YL4soIpnLITJRlpFiUraW0F6D4UvOveJc5u7LueeJ373nwtVWz1/nPM/v+Zzf6/eIE63lP1Y10AA8Buhzbp0DDgC7gP657soc0CLgM+Bp/8Ip4BdgArgBuBO4yz87CDwLjOfDr4UuBXp8g9cR2U7ancVNgQgEHcACTADYDOzwbe8FjufA+VD1oBs4CfIotj1ppi9AIo6URMBNY/6eRK4rhcLrwXOVUQi0A48ADwFdupmD2oBa9SFShwEz2Y/MryXwVDNWRV0Gmv6tE7dzJyYxjlVcBeEi1BbMMUC91fRM56Ad2YJICEiayQGsmrU4Da1IRQRmAA04BN7vvaQ6Ynh9RyExg0QqwbLBeIo/CSxX6E3AKNCMFYiZ8V6sJWsJNet3wIzPgiUrMOYyWL0SDWW880aHcdt3kv6xBYkuVstngC+AOoV+kEm6WGKmR6A4Sjj2KxIpwozNFmFLL1AFrASOYgzYIaTUysATTfV4Q11Iaa3mWb3dr1BthzGMd5uZGsB5/gB2/RrMmbiNRR9QCdQAZ67qybRBygvwBk6TeOduxA5BqPAQsFqhSv/QXDzXYC/fiLO5BXPJXYibagNZBrwFtAELtLB5YMFYg1Lh/JH6ZCtuZ0zT0ATEslBj3jRTA1uchoME6h/GG7qyg4DV6AM0ktI5p87zdsnCwpfSHXtItm5AorUvArtznr5vpv982bp9HaHGrzBX0hGSyT0gq4E3gI/8NFztKfZ5KQ+OpFqacA9vQ6KLXgXeVuhFYBjDMm+qD+e5vQTXP4l3OgGW+UlbBHgA+OFfOV1QgHdqkMS79yAFJRAM7wfWKfRjYFOm+jNjEAwR3tqD3BzFXJgFW04AK4BVGbBWPxBGygTiEG9ahRk+gZQuBi+dAo4otAI4CzRiB94zY31I9UrCW7rAATMa13EvwxgHsc9K1IEUeCP9uG3bSHd/idxYo83/OPCtCk5uor73QxTEwpsYxF70IMEXWrFuLYfLvo6EIN3Tjbsvhjd4HNw4Mr8q2xNGQ2AAWJKDqtzp1WOI3K9WZmIQSm4h+MRrWNVLwRPSP7fjHtoN7gxSUglOQW729wHr/bY7n69S92UmJqs0a7ACSf6awMxeguII4pFVqXllEJ6XUymt3Te+9mr4mdm+Vk+1GEf8Km8C+RTjgZvMbgVVbzKx6ttG4POszGT+Dlr5zJpL+cuBr/1ZV5vDvvJP+tJ2B1APqFyqoG8Ahv5P+fPPtD9f8QW4JO9Ac/8dsD1TgznWPy+HZHcwKZBAAAAAAElFTkSuQmCC" />
+                                    </svg>
+                                </a>
+                                <a href="#">Continue Shopping</a>
+                                <div class="woocommerce-notices-wrapper"></div>
+                                <form name="checkout" method="post" class="checkout woocommerce-checkout row"
+                                    action="http://localhost/paymentcloud/shop/checkout/" enctype="multipart/form-data"
+                                    novalidate="novalidate">
+                                    <div class="col2-set col-6" id="customer_details">
+                                        <div class="col-12">
+                                            <div class="woocommerce-billing-fields">
+                                                <h3>Billing details</h3>
+                                                <div class="woocommerce-billing-fields__field-wrapper">
+                                                    <div class="billing-input-fields form-row row">
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_first_name">First name</label>
+                                                            <input type="text" name="billing_first_name"
+                                                                class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_last_name">Last name</label>
+                                                            <input type="text" name="billing_last_name"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="billing-input-fields form-group col-12">
+                                                        <label for="billing_first_name">Company name (optional)</label>
+                                                        <input type="text" name="billing_first_name"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="billing-input-fields form-group col-12">
+                                                        <label for="billing_country">State</label>
+                                                        <select id="billing_country" name="billing_country"
+                                                            class="form-control">
+                                                            <option value="">Select a country / region…</option>
+                                                            <option value="AF">Afghanistan</option>
+                                                            <option value="AX">Åland Islands</option>
+                                                            <option value="AL">Albania</option>
+                                                            <option value="DZ">Algeria</option>
+                                                            <option value="AS">American Samoa</option>
+                                                            <option value="AD">Andorra</option>
+                                                            <option value="AO">Angola</option>
+                                                            <option value="AI">Anguilla</option>
+                                                            <option value="AQ">Antarctica</option>
+                                                            <option value="AG">Antigua and Barbuda</option>
+                                                            <option value="AR">Argentina</option>
+                                                            <option value="AM">Armenia</option>
+                                                            <option value="AW">Aruba</option>
+                                                            <option value="AU">Australia</option>
+                                                            <option value="AT">Austria</option>
+                                                            <option value="AZ">Azerbaijan</option>
+                                                            <option value="BS">Bahamas</option>
+                                                            <option value="BH">Bahrain</option>
+                                                            <option value="BD">Bangladesh</option>
+                                                            <option value="BB">Barbados</option>
+                                                            <option value="BY">Belarus</option>
+                                                            <option value="PW">Belau</option>
+                                                            <option value="BE">Belgium</option>
+                                                            <option value="BZ">Belize</option>
+                                                            <option value="BJ">Benin</option>
+                                                            <option value="BM">Bermuda</option>
+                                                            <option value="BT">Bhutan</option>
+                                                            <option value="BO">Bolivia</option>
+                                                            <option value="BQ">Bonaire, Saint Eustatius and Saba
+                                                            </option>
+                                                            <option value="BA">Bosnia and Herzegovina</option>
+                                                            <option value="BW">Botswana</option>
+                                                            <option value="BV">Bouvet Island</option>
+                                                            <option value="BR">Brazil</option>
+                                                            <option value="IO">British Indian Ocean Territory
+                                                            </option>
+                                                            <option value="BN">Brunei</option>
+                                                            <option value="BG">Bulgaria</option>
+                                                            <option value="BF">Burkina Faso</option>
+                                                            <option value="BI">Burundi</option>
+                                                            <option value="KH">Cambodia</option>
+                                                            <option value="CM">Cameroon</option>
+                                                            <option value="CA">Canada</option>
+                                                            <option value="CV">Cape Verde</option>
+                                                            <option value="KY">Cayman Islands</option>
+                                                            <option value="CF">Central African Republic</option>
+                                                            <option value="TD">Chad</option>
+                                                            <option value="CL">Chile</option>
+                                                            <option value="CN">China</option>
+                                                            <option value="CX">Christmas Island</option>
+                                                            <option value="CC">Cocos (Keeling) Islands</option>
+                                                            <option value="CO">Colombia</option>
+                                                            <option value="KM">Comoros</option>
+                                                            <option value="CG">Congo (Brazzaville)</option>
+                                                            <option value="CD">Congo (Kinshasa)</option>
+                                                            <option value="CK">Cook Islands</option>
+                                                            <option value="CR">Costa Rica</option>
+                                                            <option value="HR">Croatia</option>
+                                                            <option value="CU">Cuba</option>
+                                                            <option value="CW">Curaçao</option>
+                                                            <option value="CY">Cyprus</option>
+                                                            <option value="CZ">Czech Republic</option>
+                                                            <option value="DK">Denmark</option>
+                                                            <option value="DJ">Djibouti</option>
+                                                            <option value="DM">Dominica</option>
+                                                            <option value="DO">Dominican Republic</option>
+                                                            <option value="EC">Ecuador</option>
+                                                            <option value="EG">Egypt</option>
+                                                            <option value="SV">El Salvador</option>
+                                                            <option value="GQ">Equatorial Guinea</option>
+                                                            <option value="ER">Eritrea</option>
+                                                            <option value="EE">Estonia</option>
+                                                            <option value="SZ">Eswatini</option>
+                                                            <option value="ET">Ethiopia</option>
+                                                            <option value="FK">Falkland Islands</option>
+                                                            <option value="FO">Faroe Islands</option>
+                                                            <option value="FJ">Fiji</option>
+                                                            <option value="FI">Finland</option>
+                                                            <option value="FR">France</option>
+                                                            <option value="GF">French Guiana</option>
+                                                            <option value="PF">French Polynesia</option>
+                                                            <option value="TF">French Southern Territories</option>
+                                                            <option value="GA">Gabon</option>
+                                                            <option value="GM">Gambia</option>
+                                                            <option value="GE">Georgia</option>
+                                                            <option value="DE">Germany</option>
+                                                            <option value="GH">Ghana</option>
+                                                            <option value="GI">Gibraltar</option>
+                                                            <option value="GR">Greece</option>
+                                                            <option value="GL">Greenland</option>
+                                                            <option value="GD">Grenada</option>
+                                                            <option value="GP">Guadeloupe</option>
+                                                            <option value="GU">Guam</option>
+                                                            <option value="GT">Guatemala</option>
+                                                            <option value="GG">Guernsey</option>
+                                                            <option value="GN">Guinea</option>
+                                                            <option value="GW">Guinea-Bissau</option>
+                                                            <option value="GY">Guyana</option>
+                                                            <option value="HT">Haiti</option>
+                                                            <option value="HM">Heard Island and McDonald Islands
+                                                            </option>
+                                                            <option value="HN">Honduras</option>
+                                                            <option value="HK">Hong Kong</option>
+                                                            <option value="HU">Hungary</option>
+                                                            <option value="IS">Iceland</option>
+                                                            <option value="IN">India</option>
+                                                            <option value="ID">Indonesia</option>
+                                                            <option value="IR">Iran</option>
+                                                            <option value="IQ">Iraq</option>
+                                                            <option value="IE">Ireland</option>
+                                                            <option value="IM">Isle of Man</option>
+                                                            <option value="IL">Israel</option>
+                                                            <option value="IT">Italy</option>
+                                                            <option value="CI">Ivory Coast</option>
+                                                            <option value="JM">Jamaica</option>
+                                                            <option value="JP">Japan</option>
+                                                            <option value="JE">Jersey</option>
+                                                            <option value="JO">Jordan</option>
+                                                            <option value="KZ">Kazakhstan</option>
+                                                            <option value="KE">Kenya</option>
+                                                            <option value="KI">Kiribati</option>
+                                                            <option value="KW">Kuwait</option>
+                                                            <option value="KG">Kyrgyzstan</option>
+                                                            <option value="LA">Laos</option>
+                                                            <option value="LV">Latvia</option>
+                                                            <option value="LB">Lebanon</option>
+                                                            <option value="LS">Lesotho</option>
+                                                            <option value="LR">Liberia</option>
+                                                            <option value="LY">Libya</option>
+                                                            <option value="LI">Liechtenstein</option>
+                                                            <option value="LT">Lithuania</option>
+                                                            <option value="LU">Luxembourg</option>
+                                                            <option value="MO">Macao</option>
+                                                            <option value="MG">Madagascar</option>
+                                                            <option value="MW">Malawi</option>
+                                                            <option value="MY">Malaysia</option>
+                                                            <option value="MV">Maldives</option>
+                                                            <option value="ML">Mali</option>
+                                                            <option value="MT">Malta</option>
+                                                            <option value="MH">Marshall Islands</option>
+                                                            <option value="MQ">Martinique</option>
+                                                            <option value="MR">Mauritania</option>
+                                                            <option value="MU">Mauritius</option>
+                                                            <option value="YT">Mayotte</option>
+                                                            <option value="MX">Mexico</option>
+                                                            <option value="FM">Micronesia</option>
+                                                            <option value="MD">Moldova</option>
+                                                            <option value="MC">Monaco</option>
+                                                            <option value="MN">Mongolia</option>
+                                                            <option value="ME">Montenegro</option>
+                                                            <option value="MS">Montserrat</option>
+                                                            <option value="MA">Morocco</option>
+                                                            <option value="MZ">Mozambique</option>
+                                                            <option value="MM">Myanmar</option>
+                                                            <option value="NA">Namibia</option>
+                                                            <option value="NR">Nauru</option>
+                                                            <option value="NP">Nepal</option>
+                                                            <option value="NL">Netherlands</option>
+                                                            <option value="NC">New Caledonia</option>
+                                                            <option value="NZ">New Zealand</option>
+                                                            <option value="NI">Nicaragua</option>
+                                                            <option value="NE">Niger</option>
+                                                            <option value="NG">Nigeria</option>
+                                                            <option value="NU">Niue</option>
+                                                            <option value="NF">Norfolk Island</option>
+                                                            <option value="KP">North Korea</option>
+                                                            <option value="MK">North Macedonia</option>
+                                                            <option value="MP">Northern Mariana Islands</option>
+                                                            <option value="NO">Norway</option>
+                                                            <option value="OM">Oman</option>
+                                                            <option value="PK">Pakistan</option>
+                                                            <option value="PS">Palestinian Territory</option>
+                                                            <option value="PA">Panama</option>
+                                                            <option value="PG">Papua New Guinea</option>
+                                                            <option value="PY">Paraguay</option>
+                                                            <option value="PE">Peru</option>
+                                                            <option value="PH">Philippines</option>
+                                                            <option value="PN">Pitcairn</option>
+                                                            <option value="PL">Poland</option>
+                                                            <option value="PT">Portugal</option>
+                                                            <option value="PR">Puerto Rico</option>
+                                                            <option value="QA">Qatar</option>
+                                                            <option value="RE">Reunion</option>
+                                                            <option value="RO">Romania</option>
+                                                            <option value="RU">Russia</option>
+                                                            <option value="RW">Rwanda</option>
+                                                            <option value="ST">São Tomé and Príncipe</option>
+                                                            <option value="BL">Saint Barthélemy</option>
+                                                            <option value="SH">Saint Helena</option>
+                                                            <option value="KN">Saint Kitts and Nevis</option>
+                                                            <option value="LC">Saint Lucia</option>
+                                                            <option value="SX">Saint Martin (Dutch part)</option>
+                                                            <option value="MF">Saint Martin (French part)</option>
+                                                            <option value="PM">Saint Pierre and Miquelon</option>
+                                                            <option value="VC">Saint Vincent and the Grenadines
+                                                            </option>
+                                                            <option value="WS">Samoa</option>
+                                                            <option value="SM">San Marino</option>
+                                                            <option value="SA">Saudi Arabia</option>
+                                                            <option value="SN">Senegal</option>
+                                                            <option value="RS">Serbia</option>
+                                                            <option value="SC">Seychelles</option>
+                                                            <option value="SL">Sierra Leone</option>
+                                                            <option value="SG">Singapore</option>
+                                                            <option value="SK">Slovakia</option>
+                                                            <option value="SI">Slovenia</option>
+                                                            <option value="SB">Solomon Islands</option>
+                                                            <option value="SO">Somalia</option>
+                                                            <option value="ZA">South Africa</option>
+                                                            <option value="GS">South Georgia/Sandwich Islands
+                                                            </option>
+                                                            <option value="KR">South Korea</option>
+                                                            <option value="SS">South Sudan</option>
+                                                            <option value="ES">Spain</option>
+                                                            <option value="LK">Sri Lanka</option>
+                                                            <option value="SD">Sudan</option>
+                                                            <option value="SR">Suriname</option>
+                                                            <option value="SJ">Svalbard and Jan Mayen</option>
+                                                            <option value="SE">Sweden</option>
+                                                            <option value="CH">Switzerland</option>
+                                                            <option value="SY">Syria</option>
+                                                            <option value="TW">Taiwan</option>
+                                                            <option value="TJ">Tajikistan</option>
+                                                            <option value="TZ">Tanzania</option>
+                                                            <option value="TH">Thailand</option>
+                                                            <option value="TL">Timor-Leste</option>
+                                                            <option value="TG">Togo</option>
+                                                            <option value="TK">Tokelau</option>
+                                                            <option value="TO">Tonga</option>
+                                                            <option value="TT">Trinidad and Tobago</option>
+                                                            <option value="TN">Tunisia</option>
+                                                            <option value="TR">Turkey</option>
+                                                            <option value="TM">Turkmenistan</option>
+                                                            <option value="TC">Turks and Caicos Islands</option>
+                                                            <option value="TV">Tuvalu</option>
+                                                            <option value="UG">Uganda</option>
+                                                            <option value="UA">Ukraine</option>
+                                                            <option value="AE">United Arab Emirates</option>
+                                                            <option value="GB">United Kingdom (UK)</option>
+                                                            <option value="US" selected="selected">United States
+                                                                (US)</option>
+                                                            <option value="UM">United States (US) Minor Outlying
+                                                                Islands</option>
+                                                            <option value="UY">Uruguay</option>
+                                                            <option value="UZ">Uzbekistan</option>
+                                                            <option value="VU">Vanuatu</option>
+                                                            <option value="VA">Vatican</option>
+                                                            <option value="VE">Venezuela</option>
+                                                            <option value="VN">Vietnam</option>
+                                                            <option value="VG">Virgin Islands (British)</option>
+                                                            <option value="VI">Virgin Islands (US)</option>
+                                                            <option value="WF">Wallis and Futuna</option>
+                                                            <option value="EH">Western Sahara</option>
+                                                            <option value="YE">Yemen</option>
+                                                            <option value="ZM">Zambia</option>
+                                                            <option value="ZW">Zimbabwe</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="billing-input-fields form-group col-12">
+                                                        <label for="billing_address_1">Street address</label>
+                                                        <input type="text" id="billing_address_1"
+                                                            name="billing_address_1"
+                                                            placeholder="House number and street name"
+                                                            class="form-control">
+                                                        <input type="text" id="billing_address_2"
+                                                            name="billing_address_2"
+                                                            placeholder="Apartment, suite, unit, etc. (optional)"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="billing-input-fields form-row row">
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_city">Town / City</label>
+                                                            <input type="text" name="billing_city" class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_state">State</label>
+                                                            <select id="billing_state" name="billing_state"
+                                                                class="form-control">
+                                                                <option value="">Select an option…</option>
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="CA">California</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="DC">District Of Columbia</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="HI">Hawaii</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WA">Washington</option>
+                                                                <option value="WV">West Virginia</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                                <option value="WY">Wyoming</option>
+                                                                <option value="AA">Armed Forces (AA)</option>
+                                                                <option value="AE">Armed Forces (AE)</option>
+                                                                <option value="AP">Armed Forces (AP)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="billing-input-fields form-row row">
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_postcode">ZIP Code</label>
+                                                            <input type="text" name="billing_postcode"
+                                                                class="form-control">
+                                                        </div>
+                                                        <div class="col-sm-12 form-group col-md-6">
+                                                            <label for="billing_phone">Phone</label>
+                                                            <input type="text" name="billing_phone"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="billing-input-fields form-group col-12">
+                                                        <label for="billing_email">Email address</label>
+                                                        <input type="text" name="billing_email" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- <div class="col-12">
+                                            <div class="woocommerce-shipping-fields">
+                                            </div>
+                                            <div class="woocommerce-additional-fields">
+
+
+
+                                                <h3>Additional information</h3>
+
+
+                                                <div class="woocommerce-additional-fields__field-wrapper">
+                                                    <p class="form-row notes" id="order_comments_field"
+                                                        data-priority=""><label for="order_comments" class="">Order
+                                                            notes&nbsp;<span
+                                                                class="optional">(optional)</span></label><span
+                                                            class="woocommerce-input-wrapper"><textarea
+                                                                name="order_comments" class="input-text "
+                                                                id="order_comments"
+                                                                placeholder="Notes about your order, e.g. special notes for delivery."
+                                                                rows="2" cols="5"></textarea></span></p>
+                                                </div>
+
+
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 id="order_review_heading">Your order</h3>
+                                        <div id="order_review" class="woocommerce-checkout-review-order">
+                                            <table class="shop_table woocommerce-checkout-review-order-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="product-name">Product</th>
+                                                        <th class="product-total">Subtotal</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="cart_item">
+                                                        <td class="product-name">
+                                                            Cap&nbsp; <strong class="product-quantity">×&nbsp;1</strong>
+                                                        </td>
+                                                        <td class="product-total">
+                                                            <span class="woocommerce-Price-amount amount"><bdi><span
+                                                                        class="woocommerce-Price-currencySymbol">$</span>16.00</bdi></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+
+                                                    <tr class="cart-subtotal">
+                                                        <th>Subtotal</th>
+                                                        <td><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                        class="woocommerce-Price-currencySymbol">$</span>16.00</bdi></span>
+                                                        </td>
+                                                    </tr>
+
+
+
+
+
+
+                                                    <tr class="order-total">
+                                                        <th>Total</th>
+                                                        <td><strong><span
+                                                                    class="woocommerce-Price-amount amount"><bdi><span
+                                                                            class="woocommerce-Price-currencySymbol">$</span>16.00</bdi></span></strong>
+                                                        </td>
+                                                    </tr>
+
+
+                                                </tfoot>
+                                            </table>
+
+                                            <div id="payment" class="woocommerce-checkout-payment">
+                                                <ul class="wc_payment_methods payment_methods methods">
+                                                    <li
+                                                        class="woocommerce-notice woocommerce-notice--info woocommerce-info">
+                                                        Sorry, it seems that there are no available payment methods for
+                                                        your
+                                                        state. Please contact us if you require assistance or wish to
+                                                        make
+                                                        alternate arrangements.</li>
+                                                </ul>
+                                                <div class="form-row place-order">
+                                                    <noscript>
+                                                        Since your browser does not support JavaScript, or it is
+                                                        disabled,
+                                                        please ensure you click the <em>Update Totals</em> button before
+                                                        placing your order. You may be charged more than the amount
+                                                        stated
+                                                        above if you fail to do so. <br /><button type="submit"
+                                                            class="button alt" name="woocommerce_checkout_update_totals"
+                                                            value="Update totals">Update totals</button>
+                                                    </noscript>
+
+                                                    <div class="woocommerce-terms-and-conditions-wrapper">
+                                                        <div class="woocommerce-privacy-policy-text">
+                                                            <p>Your personal data will be used to process your order,
+                                                                support your experience throughout this website, and for
+                                                                other purposes described in our <a
+                                                                    href="http://localhost/paymentcloud/shop/?page_id=3"
+                                                                    class="woocommerce-privacy-policy-link"
+                                                                    target="_blank">privacy policy</a>.</p>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <button type="submit" class="button alt"
+                                                        name="woocommerce_checkout_place_order" id="place_order"
+                                                        value="Place order" data-value="Place order">Place
+                                                        order</button>
+
+                                                    <input type="hidden" id="woocommerce-process-checkout-nonce"
+                                                        name="woocommerce-process-checkout-nonce"
+                                                        value="f76bb98938"><input type="hidden" name="_wp_http_referer"
+                                                        value="/paymentcloud/shop/?wc-ajax=update_order_review">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div><!-- .entry-content -->
+                        <div class="edit-link"><a class="post-edit-link"
+                                href="http://localhost/paymentcloud/shop/wp-admin/post.php?post=8&amp;action=edit">Edit
+                                <span class="screen-reader-text">Checkout</span></a></div>
+                    </article><!-- #post-## -->
+
+                </main><!-- #main -->
+            </div><!-- #primary -->
+
+
+        </div><!-- .col-full -->
+    </div>
+
+    <!-- Footer started form here -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-bottom">
+                <div class="col d-flex align-items-center gap-4">
+                    <img src="./assets/images/Layer 54.png" alt="">
+                    <div>
+                        <p class="mb-0">Copyright 2022 PaymentCloud.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center gap-3 gap-md-5">
+                    <img src="./assets/images/Layer 50.png" alt="">
+                    <img src="./assets/images/Layer 51.png" alt="">
+                    <img src="./assets/images/Layer 52.png" alt="">
+                    <img src="./assets/images/Layer 53.png" alt="">
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./assets/js/functions.js"></script>
+
+</body>
+
+</html>
