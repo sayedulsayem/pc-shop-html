@@ -988,6 +988,9 @@ body {
   .site-content {
     margin-top: 60px;
     margin-bottom: 140px;
+    @media (max-width: 768px) {
+      margin-bottom: 100px;
+    }
   }
 
   .woocommerce-billing-fields {
@@ -1024,7 +1027,19 @@ body {
 
   .woocommerce-checkout-payment {
     margin-top: 30px;
-    margin-left: 30px;
+    .desk {
+      margin-left: 30px;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .mob {
+      margin: auto auto;
+      display: none;
+      @media (max-width: 1024px) {
+        display: block;
+      }
+    }
   }
 
   .place-order {
@@ -1032,6 +1047,7 @@ body {
     .btn-white {
       width: 390px;
       height: 54px;
+      font-size: 18px;
     }
   }
 
@@ -1043,13 +1059,22 @@ body {
     border: 1px solid #FF9900;
     border-radius: 4px;
 
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 25px;
+    }
+
     h5 {
       color: #FF9900;
     }
 
     .btn-yellow {
-      width: 445px;
+      width: 80%;
       height: 54px;
+      font-size: 18px;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
     }
   }
 }
