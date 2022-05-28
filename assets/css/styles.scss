@@ -218,6 +218,10 @@ body {
           width: 353px;
           background-color: #FFF8EC;
           border-radius: 16px;
+          @media (max-width: 600px) {
+            margin-left: 0;
+            margin-right: 0;
+          }
           a {
               font-size: 14px;
               font-style: normal;
@@ -774,6 +778,7 @@ body {
 // Get payment cloud section starts from here
 .get-payment-cloud {
   background: linear-gradient(to right, rgba(29, 72, 129, 1), rgba(29, 72, 129, 0.7)), url("../images/Layer\ 28.png") no-repeat center;
+  background-size: cover;
   padding: 100px 600px 120px;
 
   @media (max-width: 1920px) {

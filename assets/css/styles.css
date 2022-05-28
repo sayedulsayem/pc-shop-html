@@ -256,6 +256,13 @@ body {
   border-radius: 16px;
 }
 
+@media (max-width: 600px) {
+  .cart-container .cart-wrapper .subtotal .btn-yellow {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .cart-container .cart-wrapper .subtotal .btn-yellow a {
   font-size: 14px;
   font-style: normal;
@@ -894,6 +901,7 @@ body {
 .get-payment-cloud {
   background: -webkit-gradient(linear, left top, right top, from(#1d4881), to(rgba(29, 72, 129, 0.7))), url("../images/Layer 28.png") no-repeat center;
   background: linear-gradient(to right, #1d4881, rgba(29, 72, 129, 0.7)), url("../images/Layer 28.png") no-repeat center;
+  background-size: cover;
   padding: 100px 600px 120px;
   text-align: center;
   background-attachment: fixed;
