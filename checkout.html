@@ -60,7 +60,7 @@
                                 <form name="checkout" method="post" class="checkout woocommerce-checkout row"
                                     action="http://localhost/paymentcloud/shop/checkout/" enctype="multipart/form-data"
                                     novalidate="novalidate">
-                                    <div class="col2-set col-6" id="customer_details">
+                                    <div class="col2-set col-sm-12 col-md-6" id="customer_details">
                                         <div class="col-12">
                                             <div class="woocommerce-billing-fields">
                                                 <h3>Billing details</h3>
@@ -472,7 +472,7 @@
                                             </div>
                                         </div> -->
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-sm-12 col-md-6 order-details">
                                         <h3 id="order_review_heading">Your order</h3>
                                         <div id="order_review" class="woocommerce-checkout-review-order">
                                             <table class="shop_table woocommerce-checkout-review-order-table">
@@ -485,7 +485,8 @@
                                                 <tbody>
                                                     <tr class="cart_item">
                                                         <td class="product-name">
-                                                            Cap&nbsp; <strong class="product-quantity">×&nbsp;1</strong>
+                                                            Ingenico iCT220 Card Reader<strong class="product-quantity">
+                                                                x 1</strong>
                                                         </td>
                                                         <td class="product-total">
                                                             <span class="woocommerce-Price-amount amount"><bdi><span
@@ -502,11 +503,6 @@
                                                         </td>
                                                     </tr>
 
-
-
-
-
-
                                                     <tr class="order-total">
                                                         <th>Total</th>
                                                         <td><strong><span
@@ -520,44 +516,70 @@
                                             </table>
 
                                             <div id="payment" class="woocommerce-checkout-payment">
-                                                <ul class="wc_payment_methods payment_methods methods">
-                                                    <li
-                                                        class="woocommerce-notice woocommerce-notice--info woocommerce-info">
-                                                        Sorry, it seems that there are no available payment methods for
-                                                        your
-                                                        state. Please contact us if you require assistance or wish to
-                                                        make
-                                                        alternate arrangements.</li>
-                                                </ul>
-                                                <div class="form-row place-order">
-                                                    <noscript>
-                                                        Since your browser does not support JavaScript, or it is
-                                                        disabled,
-                                                        please ensure you click the <em>Update Totals</em> button before
-                                                        placing your order. You may be charged more than the amount
-                                                        stated
-                                                        above if you fail to do so. <br /><button type="submit"
-                                                            class="button alt" name="woocommerce_checkout_update_totals"
-                                                            value="Update totals">Update totals</button>
-                                                    </noscript>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="601" height="197"
+                                                    viewBox="0 0 601 197">
+                                                    <g id="Group_5" data-name="Group 5"
+                                                        transform="translate(-1014 -541)">
+                                                        <rect id="Rounded_Rectangle_2_copy_17"
+                                                            data-name="Rounded Rectangle 2 copy 17" width="601"
+                                                            height="197" rx="4" transform="translate(1014 541)"
+                                                            fill="#dbeffe" />
+                                                        <image id="Layer_67" data-name="Layer 67" width="134"
+                                                            height="16" transform="translate(1122 551)"
+                                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAAQCAYAAADTRgfPAAAABHNCSVQICAgIfAhkiAAAFhpJREFUaEN1mgmYldV5x3/n+767bzN35s7CDDsDKqJoiEismKA2Wg2razTS2DQuxSzWtCZNzKPYtNqkbYopBG0TozWmOgqkmCZEAlYhBlBkVxwEZhiY5c6du8xdvrXPOd8dJV0uzzDfcs/2nv/7f9/zf0c88uTh67a81ve04xghTQPP80C4eJ4DnsDDkw9xPQcXcD35P3g4CHnvyvf+cxcP13HRhLtnYof2wCUXdOx2TY/MtBbap7YwOlpg6/6+LxwZsB+0PdEqhN+X/xGqP089E2pshBrdf+tpZ33Xn4GcnWW5NEcZW3X9nOXXzG7a4QC7TpU5M2rieE7Xc2/3/qRn1Dlf1zW/f7k+T67P707dy3l7ArUU9d4f15NzUNfyvVwrVGsWn5oWf/PRFXPuikSMnrAzQnv2dQg2xkpHt/9InHzlWk13pAn9BrIn/wY8pz6evLb9d56HUGPY6lbNTUjbyyYWnuv22S1XPRP/2I3f0ZsDbPv1af6hu5+JmRC79uz/t+O9ZxYHgwGkdYTaITlXDUN4CE1aSH5cNFfgCf9ek4vxG6C7AiGXKWdg22iuc+gbX/vKfWLOkp/nHaM9GQrqeI6tAKDgoACgqd/yR/6TRvfUAmU38k6uoz60K2Hh4QppPIeoPuJdMkufZ9e8t5pntdE2PUM2W7xrw5GxdWawmZCu+X2dBQxNGl+CUy1RzRYhPDkL34BnfVuOKu91odE7OMKiKfqZx269eK6hGQPff+09dvScIRAIbjgp0ku0WBxcRxnErSPCB8Q4MCSwUVD31yvXL6/VF+rOIa2iqXk52SGumBF5MZZsv/Hy0Ds8mNlE0Uks1bN7Xo56AyB0BWrVgbSjvJYb79bBoDxJXteBo2wo731g+Nf1tk6VotdKaN59NwWnd7zwk6d2cedDO2hpj96ih+M/jUZj4Di+L7mesoen6ThyTKFhyGeurezoCR0bXQ2jCwfdc9V7CRg02VaQzeZoTSf6xNzlrzrBeEazzEp9EeOGkQCQKHMVC0jUu3LXJRKl8XCw654nJBJd/7kCkAihuwVi7okHvZrzWLirlXBnCrPqPD8YmHizoxloypvGt9pDCI2aDfniGIZZImjIngSmJzDRicYSJCMhhGSyOsP4vx1KtsGkcIWV89pujYZCz//r/n7e7B+hJZX6lZ5qudp0TCRfKLBJQ3wICp95FBDUlYbnOIr9hHKKcQapO7PwmcP2NFLVgV8PVwJX3956iGfO+zk5M35T0u39me6VFaiUb8pNVswn2UD++K7lA0CyQh0AChjyne90ilkUTB3FGlUvit614tnAuR2f+5e1h/nCtw+RmhT7y3RL299qcsOV7RUyqAUCmB7EbJMANjXNwDNCaE6QSj6PsHNomtyjBLFoA7GQnEetzsCSRjRwTMTHbtha0ELphG2VQcYSuXjXxVUL8eepvFUCQ3qV6yB0FUSwnDrKP/Q0R9Gi4xkYokhzePjLnun8U2hqC5GOBmoVe12fl7nLEkE0ZRT/o2k6+XINrzrGTZdOYv6FjQRdl0REYJkOu98tsXnfad4bMsk0N/pb7PpsKLe0ZMGMhM3K+RNujAaDL/5o/yne7M/RlIhvdKNNix1F19LMvhHVolSUkKCo74XcCukI4/SvgFH/vh+EcF1pRE1t4QRR3DRqRpbc0ryPtTNeomAllkftE92Gm/eNq8hAerIflqXT+A99x/OBUweLwors2weOCqeqjc8sVS+FPmvF+sCsCXf9aP0R7nzkIJmJsVXJhqY1KgyoTRJUNZ2oVeGiapE51RIJ1+JkIMpuI8Epylwy3eETk02iQYd3h6JsPWBzptJIY7oBzSn7jOh6hAOiKC5a/mrBiGQSrlPEsk1yhTJVS6MpHSUQEAz0F4iGDGpWhWg8jO1q5PKjCvdtmZSaVP/QKLGwQaohgmNLT5cUlicdzt7nWd4T0WkZoh0pahVnba/XfLctgr7nK4rVGas6hN0SP/jiXFqiYf79zaOUCRNxq9y5aDazEwHOFMo8sOEAG/YWaW1K4ykq9j2+ZGl0xS0+v6B9RTQYeunJ/afYeSpHJh7bSDS92BYauTGfTm3bIhwMYdoWpmUp8Gu6hmvVw1ogCLYLVg0MSbsytmlqvqGApr5ruQ4TvPymUSu65JbMAdZ1bfCBYZ3oNuzR+rokO8mN9r3RD1ty+8x6/iCBYfl5lGRhlcSYflsVhup5hiOB0Yg+64Z1gVkT7hkHRsvE2KpEQ3qNJqSbuJR1g5ZKhXuHT7JioJ+wXZNxWDnzTsNA/+MUi66TXVfrRC04eirG11+K8ubpCWSSYQV8R7JNQC+Kucu2FPRwJlEpZ8k0N3DZ/DZq+UG27hkllyvw6SsmUSxWCUcCHD0xQj6XY+Wyi3F0nae7D5MvFFn6qUkcO13grSN5wpGo6jzgFWiOjNznme4Tkf8FjIDvDSqa6pRyw6y9+2Okoxp/+nfbaG1r4kzBpL0xwrETp/m7lZew8pJJylMXr9nBzhMuDQ3RDz2sZOl0xc2PgPFOLzv6cmQSsY0kMotLlSrTmkJ4lQqRRJj+wRzNiSiN8ShGwCBftYgHBdWqw0CuTFMmQSyg0defw9EDhL0aw5ZO2Y1QMS3FUhO8UQWMmzMH+eGMDeStxPK4daJbt0apugYaNQJuGVNGYc3A0Dw8q0LNSGE4eVzJ0Mi4bqNLqvc8TOlUuqFYRdgVNGwCukuVBvSZN/+/wDBltHItvjTQy5dO9uA6JpafmWHhkJgTQr8uANPL2BEXYckcA8iEOZXtZOX6AMfGppCMyIjgEv8IGM0Js1bAFYJrLo/z3S9fxKq/eYOdb/axZ8PNrPnZWyy75gKe37SPay7vxCxbHB/x+Mqj27j6E+38y0NX8sqOHm68fxtNLW14rkNIjJFWwHD+D8bwgSEnLj35yq4I37xpNp956Bc8dPNcrvz4JFas3kL3N67mP/f28/DTr7P94Ws4tznJlqND3PbkPkKJBgL15O1/A+MkO/tGaErENlbDmcWNVp4XVs0nd/I0dlgjO2ZL0NAeD9GXrdBbrHHVOQnODDlUtDA9/SfJJKNMm9DOWycGuag1wG/6Tf7m1REGSlU0XWfSODCa97Ou62WfMSqHukW0GXvaIij24OZzGA1d0kuwPtiJnmpEdMzA7jmM6JiPiCTxhg6j5Q7iVgYwupZgmWWcsSx6PI6oniJwYge2KdDPu+0jYKw+QuvE6KpEKr1GaBpFXeey/BkePv4eXYURyoQUaztYiAZovi6K5xWwp2joczRs01a21z0wWmM8taWTb77SSmtTQu1dnTF+VdDCTQncqqL00/0f8ObPV7Bj517MWojL5k9j7dNv8c2vfopH/3E7//zQIl7YcpgvfmubynI3PrmUxrCH5Wjc9MBWxqwwAQMCFGmK5urAaCHW0ShzjLW9XlM9lEhg6AyP5Ll/6bkkvTF+uv0Ddn/7Ko6Mlrn+sa28cv9CZmaSXLx6C0vnTeCha2czbLp8+vtv0pd3iYWC9VDy+4yx/p0+BYxMMr4x60QXXzOnhdtmRggHDYqmzagNwyWHTNAFI8b7I2Po+X4SqSZiDU2MlXIq1iaCGslMmuypQVLNae7+1/0QCaMFdTrdkU05K7Lks5n9rJvxMkUrsTxc2tWtTbwCu/FCqqOHic1ZiTPQi26foOboGGGP2hvfI3LRPQTmPKQYs1J5F+foMwS8LLXExSQMh1r/frxzbkDP/RZ2PI5jljHOu6MOjPe485FDyFCicgxNY0TXuHPwON/qeRfXthUoVOKOTWy6IHmlwC2amC0aoYsDWFpNhRgZsUJJ2Hb0HO79tyQiklGnFQWMC5dJYKQTji2pLURv30m+9eU53HJVC+mGOF9a/Wu6pqT47IoFTF6whnlzmtm8bhn7Piix/rldrFt9Lb98dTfXXDmX6+79T/YeHSWVSmBQ9EOJ5T4RndpaB4blA4Owf+YWBgPZUf5yxWz00hBb92d59WsL2TdYYvn3t7Phzy7j/AkNLPzub7h0ehOPL7uAUcvj6n/azYmsRTwS+H+BsePUCJlEfKMTTiyOxSMMD+eJBYLEQxq2ZTK7Nag8fzibY0JbhlMDOd+DQiHi4TBjZYuhfImOlgSFYpWA0KkEgxweNilXPCZo+U15WyafB1g/UyafyeWRwq5u0fYxnCmfws4eINixEG/gXUzdxmi7BDG4C6d3G1rb5YQvfEQljMW3H8XQSwSTTZQObic6bwXVnrcId12NM7QDY/f3Vcqjn7uyDozD3PnwQQWMVLp5DbrOiBD8ydBxvv3+u9i2hIM8g2kqjIRmQOpKDS9vUmsRChi2ZtX1KggmYNt753Hv8w3owUY0YRMNaT4wRDidcCUwhMbgYI4FFyV46e+vkGkS0xY+xc7/uIPDh47z8qtZJrcE+eziGeSKZUxbcP6MFvbs7eUP5k3mL37wO7731O9omziRoFugKZy9z605T8RmtBHrTFOrWGv7fg8YMFywWDa3kZULO/ns47/iF391LZ2tUa74q1/wm0ev5Vi2wh89tJnuP7+CRdMz7D6VZ8kP9kEoRkjzs/j/GUp+uFfmGCM0J2IbtXjT4rI8B+sBPMcjny1wy6WtPPCJDLuPjWLoNs3RCF2TMwzkakSFR6FcwtRjDJQcStUSLdEIxXKZSZMzPPDTdzgw4NARK2/Ky1NJ5gBPzvRDSax8pFtulN15GV7xFO7oMbT0TES4EefMO2iaQJ80j8rxPRjpmeixVjj0Y7RoAlePIMrDuB0LcWpF3NH3CYRdwtURaiUT/bzPrTNmTbjnx08e5vOPHKSlM7aqoVEyhs6o8Lg8f5pHTxxlamGUMQIKGEo6aHTJXB/Bs0s4U3T0CwS2ZftHas8j0BrmJ69O4huvtNPcIEOJ5QPjgqW/VMDwnKpKqmqWTcQo8ZWVF/D24SFe2tLD11ctZOv2d2jLxPnc0vPYs3+Q5zfv5abPXMK23/WwZfshHrj3Knr78/xs87vEGtIEvFGagtn7XNN5ItE1gXgdGD5jRPyzvUyOHAOnNMxP7l/I3vdPsVbmMX8wm9/sG+GK85v5+X/t4+ZLp/L3N12kvv/F597i+T1FGhsT6PXj3f8Exrq9J3m9VzJGbKOWaF5sOVK/kQwlGMrVuPXjae66tIkDvSUaEhHCYY19R7MMlzwu7kwxZlWZ1dXGe72j9A2PMW9mMyf6snRNy/DXG46y6/0SncnqppwpQ8k+1nd1q1AStT7o1q0sTrWGpHhNd3FsBxyZYMoMUWCbJlpAwzULuI5HMBLHc6QH22h6ALtclQc1NJVQ+lpZVU+hz7xFMcaPnzzC5//6kAJGMpleIwUtS+pTToVVgydZdbwH17UpKXCATENb5ujwaWCmixWVQox/1NebBCOjk7hjfYTDpakkI0K1jQb1opiz9BcFPZJOOJYEhpy7i2VbDGYLBAMB0o0x+gdG1KlEagBjlapSeuOxMNVaBV3XiUQNhocKxOMRkqkwVcvFoEBLaFQBIz6jnXjnWTkGobp8K0lKJ1scY3oK/vme+Rw5NsiL23swPRfH8rjjk1O5Y/5UBYpHf/U+3/vlcRKpRgzhKm1CnvmLts6MmMmfLJigjqtr957kDZljJOIbRSy92JECndJZBbYtaAg4TE+ZVESI4wNjTG6L8bueIgHDIBUEy9WY0izQXHA8nZqM264gGPQ4MuzhOBqdorQpZ0aX3Nqyl/WzXiBvJpbHzJ5uw8uBp/tHVXXykmNLoeosFVTJIvLYKpUVfx0fiV91PWO8FiDzEFIY6lTS7gNj9SHaJDAa0muE0FUfY5rGxGqBLwz1ce3wEK1jY+hS/NOC7IwECa7McMX18hje789LT9EzmODh7iCvHe+gqTGmNBMpWipgzF66uWCE0wnLkcqnpBdJz0KhWcnTbn3ydZVSGlluhhRo1Bt1VpdXcpNkS08ZNuAVyYRzPjCmTyDWkcasWmt7Sd9takF01c4XjjTNUPG8Jexw/6dnMLU1SdH11MlgYiLAweNneOa3fbxysERjMkbI8FVJHxgORVtjeszhzgXtKyLB0Es/fLuPN3qztEjGiDUutqQyqERPvy5QMx1KY1XllsGQgVk1CUfCil4tqW3I7axKjUEKVXXxXWZqtouIy7xG0GEXNo1Ixmh9hyfPfYGCmbghWjv2ggSGJ+s6rtJZQdU96iBRyvF4naSugiqhr/5MgWG8HFEvswiPCkmMmTcqgevp9Uf449WH6OiIroqnm9dIxVjJ9kJQ0XSStSqXlUa4qCyVZ5fTwTCvhtMcD9b45PQi8yfXiAU8PhjS2XwwyvGxZtKpCIbjqAOuqfQaY0yct2SzbYSbdMseU1SnSRTXawp+DclHvRLhlFI4Lt/6cJAqqV8Mk2KKjGry2waGWyAh+h90qvZj8a5Oop1prKr9zHCo/XZT94Hhl80+Uj/LVYfRUpmGeIh0LIhj1ihWTfJjMkcI0tQQVZHzo48/nzHHYGqkxm0fb/1cLBh+9of7etnVN0JjMvFrI5G+UtVHZJFMKc7+RsvzulpfXRJXdRlPq69RSv5SBZX1El8sV13IK6UAazTVBn+ZLUeuub11L8+c+zNyZvKWpHPipzqlehFwvIAmQeF+VFD7UAofX8d4gc0X28Ylev/KDylVJ4o+48bnArMn3vbUE/v502+9TcPE+NdaOyY/rumGck5V7hAGticoa3JtHprr12wiOMh0LF+0lcOrGzRSkQiJsJT4ZdFBnmX8soEMbWLWZzZVAtG2sBAVX6qtb5g0plraeLXVlZJxvZClZF557xfY6ibDkveqKBOkVuqnq7V0Aw7d7edOoXNmO/0Dxe+8Phz5ejTVpASZcZHrQ3BIr5bZtGQrRyqVEjgCzZASuy8bj4PJ3y6ZYsFAsco5iRqPLDl/QTQU+O13XzvE9p4+ErHkc6X4xFtl2VhK+Y6sJKpWdWAoRpQb7RcMFTDqxUAFHlWW8desIoGcn9BwiwVmxsubRajh+sXNPTw++zUqdqqdvm3vRSoH4gSjfoMP2aFemv2wQHYWWFSVU76vR52zYK8uTcjpzcQWfefGYGf7i//+7E7uXf067a2R2wdHCs8kkilVRZUFSEPOWSmp9Vl7vn00TVZNlSVxfA3dfy4jSl2Cl86toTEwmGXu3HNeFJ+5e+NV75+q/tghmJK0pwpkdWZQhlCFIP+ZBIvaqzpTSMZQsqusmShHlGCB0liRT1zY8tRdty/6aqVs0dzRREdnnHy+mnyse9fmvf3lucFQsN7X7/m/ujmbSer+qkCiYvHZfCEn47gqi39w+QWP37Ngymr5+h92HuONo2eIBY2Wnf21Z4es4ALpEX7ZXU25zoAfldl9xvNHGw9xaun1WC/tIK/Nms30pDP01WULbjSa4ntmVI7xSecl0FKUBk5cYg3ue1aYI+3K1ccZVuVD0rbyTxfqIUaO4/hFRwWgehFSjS0lcjkTGfNF/GB01rLHoxdc+5IwHI4fd3ljf4DmhoB4+eUN39n2+murAqEwutAxZP8qx/X/xEBV12Wo0SR7SPtJdd+nPpWMK2P776Uk71o2qYaGrVf94aIl/w0YXEUVGYhBFwAAAABJRU5ErkJggg==" />
+                                                        <text id="Credit_Card" data-name="Credit Card"
+                                                            transform="translate(1023 564)" fill="#06142a"
+                                                            font-size="14" font-family="Montserrat-Regular, Montserrat">
+                                                            <tspan x="0" y="0">Credit Card</tspan>
+                                                        </text>
+                                                        <text id="Card_Number" data-name="Card Number"
+                                                            transform="translate(1023 603)" fill="#06142a"
+                                                            font-size="14" font-family="Montserrat-Regular, Montserrat">
+                                                            <tspan x="0" y="0">Card Number</tspan>
+                                                        </text>
+                                                        <g id="Rounded_Rectangle_2_copy_14"
+                                                            data-name="Rounded Rectangle 2 copy 14"
+                                                            transform="translate(1025 611)" fill="#f6f8fa"
+                                                            stroke="#dfe5eb" stroke-linejoin="round" stroke-width="1">
+                                                            <rect width="577" height="38" rx="4" stroke="none" />
+                                                            <rect x="0.5" y="0.5" width="576" height="37" rx="3.5"
+                                                                fill="none" />
+                                                        </g>
+                                                        <text id="xxxx_xxxxxx_xxxxx_xxxxxxx"
+                                                            data-name="xxxx xxxxxx xxxxx xxxxxxx"
+                                                            transform="translate(1042.5 633.965)" fill="#526c8e"
+                                                            font-size="14" font-family="Montserrat-Light, Montserrat"
+                                                            font-weight="300" letter-spacing="0.02em">
+                                                            <tspan x="0" y="0">xxxx xxxxxx xxxxx xxxxxxx</tspan>
+                                                        </text>
+                                                        <text id="Expiration_MM_YY_" data-name="Expiration (MM/YY)"
+                                                            transform="translate(1023 681)" fill="#06142a"
+                                                            font-size="14" font-family="Montserrat-Regular, Montserrat">
+                                                            <tspan x="0" y="0">Expiration (MM/YY)</tspan>
+                                                        </text>
+                                                        <g id="Rounded_Rectangle_2_copy_15"
+                                                            data-name="Rounded Rectangle 2 copy 15"
+                                                            transform="translate(1025 689)" fill="#f6f8fa"
+                                                            stroke="#dfe5eb" stroke-linejoin="round" stroke-width="1">
+                                                            <rect width="577" height="38" rx="4" stroke="none" />
+                                                            <rect x="0.5" y="0.5" width="576" height="37" rx="3.5"
+                                                                fill="none" />
+                                                        </g>
+                                                        <text id="MM_YY" data-name="MM / YY"
+                                                            transform="translate(1042.5 713.965)" fill="#526c8e"
+                                                            font-size="14" font-family="Montserrat-Light, Montserrat"
+                                                            font-weight="300" letter-spacing="0.02em">
+                                                            <tspan x="0" y="0">MM / YY</tspan>
+                                                        </text>
+                                                    </g>
+                                                </svg>
 
-                                                    <div class="woocommerce-terms-and-conditions-wrapper">
-                                                        <div class="woocommerce-privacy-policy-text">
-                                                            <p>Your personal data will be used to process your order,
-                                                                support your experience throughout this website, and for
-                                                                other purposes described in our <a
-                                                                    href="http://localhost/paymentcloud/shop/?page_id=3"
-                                                                    class="woocommerce-privacy-policy-link"
-                                                                    target="_blank">privacy policy</a>.</p>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <button type="submit" class="button alt"
-                                                        name="woocommerce_checkout_place_order" id="place_order"
-                                                        value="Place order" data-value="Place order">Place
-                                                        order</button>
-
+                                                <div class="form-row place-order d-flex justify-content-center align-items-center">
+                                                    <button type="submit" class="button alt btn-white"
+                                                            name="woocommerce_checkout_place_order" id="place_order"
+                                                            value="Place order" data-value="Place order">Place
+                                                            order</button>
                                                     <input type="hidden" id="woocommerce-process-checkout-nonce"
                                                         name="woocommerce-process-checkout-nonce"
                                                         value="f76bb98938"><input type="hidden" name="_wp_http_referer"
@@ -566,14 +588,16 @@
                                             </div>
 
                                         </div>
+                                        <div class="checkout-cta-banner d-flex justify-content-center align-items-center flex-column">
+                                            <h5>Contact us by clicking the link below, and find
+                                                out how you can get this item for FREE.</h5>
+                                                <a class="d-flex justify-content-center align-items-center link btn-yellow" href="#">GET YOUR FREE TERMINAL</a>
+                                        </div>
                                     </div>
                                 </form>
 
                             </div>
                         </div><!-- .entry-content -->
-                        <div class="edit-link"><a class="post-edit-link"
-                                href="http://localhost/paymentcloud/shop/wp-admin/post.php?post=8&amp;action=edit">Edit
-                                <span class="screen-reader-text">Checkout</span></a></div>
                     </article><!-- #post-## -->
 
                 </main><!-- #main -->
