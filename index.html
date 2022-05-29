@@ -125,12 +125,34 @@
                                         <h4>Subtotal</h4>
                                         <h4>$500</h4>
                                     </div>
-                                    <div class="btn-yellow">
-                                        <div class="message">
-                                            <img class="tick-active" src="./assets/images/Layer 61.svg" alt="">
-                                            <a href="">
-                                                QUALIFY FOR YOUR FREE TERMINAL
-                                            </a>
+                                    <div class="accordion" id="cart-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header d-flex align-items-center justify-content-between" id="headingOne">
+                                                <img class="tick-active" src="./assets/images/Layer 61.svg" alt="">
+                                                <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    qualify for your free terminal
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                                data-bs-parent="#cart-accordion">
+                                                <div class="accordion-body">
+                                                   <h4>Get a Merchant Account</h4>
+                                                   <form action="">
+                                                       <input class="form-control" id="firstName"  type="text" placeholder="First Name">
+                                                       <input class="form-control" id="lastName"  type="text" placeholder="Last Name">
+                                                       <input class="form-control" id="email"  type="text" placeholder="Email">
+                                                       <input class="form-control" id="exampleFormControlInput1"  type="text" placeholder="+1 Phone Number">
+                                                       <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Time In Business</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                      </select>
+                                                       <button class="btn-yellow" type="submit">SUBMIT</button>
+                                                   </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="btn-white mt-0 text-uppercase">
