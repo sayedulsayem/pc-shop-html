@@ -69,7 +69,7 @@
   max-width: 60%;
 }
 
-.product-details .details .thumb-container > .swiper > .swiper-wrapper > .swiper-slide-active {
+.product-details .details .thumb-container > .swiper > .swiper-wrapper > .swiper-slide-thumb-active {
   border: 2px solid #1192F8;
 }
 
