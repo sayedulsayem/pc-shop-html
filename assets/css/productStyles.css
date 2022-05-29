@@ -298,6 +298,10 @@
   line-height: 34px;
 }
 
+.technical-specification {
+  padding: 120px 0 160px;
+}
+
 .get-payment-cloud-product-details {
   background: -webkit-gradient(linear, left top, right top, from(#1d4881), to(rgba(29, 72, 129, 0.7))), url("../images/Layer 28.png") no-repeat center;
   background: linear-gradient(to right, #1d4881, rgba(29, 72, 129, 0.7)), url("../images/Layer 28.png") no-repeat center;
