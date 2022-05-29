@@ -23,17 +23,21 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var swiper2 = new Swiper(".mySwiper", {
+var swiper3 = new Swiper(".mySwiper3", {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 3,
+    slidesPerView: 1,
     freeMode: true,
     watchSlidesProgress: true,
-});
-var swiper3 = new Swiper(".mySwiper2", {
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 0,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
     thumbs: {
-        swiper: swiper,
+      swiper: swiper,
     },
-});
+  });
