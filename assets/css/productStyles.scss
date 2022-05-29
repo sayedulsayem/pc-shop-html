@@ -33,6 +33,60 @@
                 }
             }
         }
+        
+    }
+    .title{
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 52.8px;
+    }
+    .reviews{
+        display: flex;
+        column-gap: 12px;
+        margin-top: 11.5px;
+        margin-bottom: 16px;
+        .ratings{
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            .icon-container, .icon-container-half, .icon-container-blank{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15px;
+                width: 15px;
+                img{
+                   height: 16px;
+                   width: 16px;
+                }
+            }
+        }
+        span{
+            color: #06142a;
+            font-size: 16px;
+            line-height: 19.2px;
+            font-weight: lighter;
+        }
+    }
+    .price{
+        font-size: 26px;
+        line-height: 31.2px;
+        color: #06142A;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        .reg-price{
+            padding-left: 20px;
+        }
+        .discount-amount{
+            font-size: 17px;
+            font-weight: 500;
+            color: #1192F8;
+        }
+        .message{
+            font-size: 15px;
+            font-weight: lighter;
+        }
     }
 }
 
