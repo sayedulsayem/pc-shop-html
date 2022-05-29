@@ -22,3 +22,18 @@ var swiper = new Swiper(".mySwiper", {
 
     },
 });
+
+var swiper2 = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper3 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiper,
+    },
+});

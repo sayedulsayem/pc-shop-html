@@ -1,0 +1,127 @@
+// Product details starts from here
+.product-details{
+    padding: 48px 0;
+    nav{
+        display: flex;
+        column-gap: 10px;
+        & > a, & > span{
+            font-size: 16px;
+            line-height: 19.2px;
+            font-weight: lighter;
+            color: #526C8E;
+            text-decoration: none;
+            font-family: "MINGLIU", serif;
+        }
+    }
+    .details{
+        .large-slider{
+            max-height: 612px;
+        }
+        .small-slider{
+            max-height: 140px;
+            .swiper-wrapper{
+                max-height: 130px;
+                .swiper-slide{
+                    border-radius: 24px;
+                    width: 150px!important;
+                    background: #fff;
+                    border: 1px solid #f6f8fa;
+                    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.04);
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// services section styles from here
+.services{
+    padding: 115px 50px;
+    background-color: #F6F8FA;
+    .row{
+        row-gap: 82px;
+        .img-container {
+            height: 92px;
+            width: 102px;
+            margin: 0 auto;
+            background-image: url("../images/service-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        h3 {
+            margin: 25px auto 20px;
+        }
+    
+        p {
+            max-width: 386px;
+            margin: 0 auto;
+        }
+        .service-description{
+            max-width: 100%;
+            padding: 0 7%;
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+    
+}
+
+// Get payment cloud section starts from here
+.get-payment-cloud-product-details {
+    background: linear-gradient(to right, rgba(29, 72, 129, 1), rgba(29, 72, 129, 0.7)), url("../images/Layer\ 28.png") no-repeat center;
+    background-size: cover;
+    padding: 100px 750px 120px;
+
+    @media (max-width: 1920px) {
+        padding: 100px 300px 120px;
+    }
+
+    @media (max-width: 1600px) {
+        padding: 100px 200px 120px;
+    }
+
+    @media (max-width: 1440px) {
+        padding: 100px 120px 120px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 60px 20px;
+    }
+
+    text-align: center;
+    background-attachment: fixed;
+
+    h2 {
+        font-size: 65px;
+        font-weight: 900;
+        line-height: 70px;
+        color: #ffffff;
+        margin-top: 30px;
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    .container,
+    .col {
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+    }
+
+    .btn-yellow,
+    .btn-white {
+        width: 306px;
+        margin-top: 30px;
+
+        &>a {
+            width: 336px;
+            font-size: 18px;
+        }
+    }
+}

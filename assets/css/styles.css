@@ -13,6 +13,19 @@ h5,
 h6,
 p {
   margin-bottom: 0;
+  color: #003375;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.2px;
+}
+
+p {
+  color: #06142A;
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 body {
