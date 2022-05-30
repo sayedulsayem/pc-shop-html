@@ -15,9 +15,9 @@
   font-size: 16px;
   line-height: 19.2px;
   font-weight: lighter;
-  color: #526C8E;
+  color: #526c8e;
   text-decoration: none;
-  font-family: "MINGLIU", serif;
+  font-family: 'MINGLIU', serif;
 }
 
 .product-details .details .product-image {
@@ -71,7 +71,7 @@
 }
 
 .product-details .details .thumb-container > .swiper > .swiper-wrapper > .swiper-slide-thumb-active {
-  border: 2px solid #1192F8;
+  border: 2px solid #1192f8;
 }
 
 .product-details .details .large-slider {
@@ -159,7 +159,7 @@
 .product-details .price {
   font-size: 26px;
   line-height: 31.2px;
-  color: #06142A;
+  color: #06142a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +177,7 @@
 .product-details .price .discount-amount {
   font-size: 17px;
   font-weight: 500;
-  color: #1192F8;
+  color: #1192f8;
 }
 
 .product-details .price .message {
@@ -187,7 +187,7 @@
 
 .product-details .product-terms-conditions {
   margin-top: 27px;
-  background-color: #F6F8FA;
+  background-color: #f6f8fa;
   border-radius: 9px;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
@@ -197,7 +197,7 @@
 
 .product-details .product-terms-conditions span {
   font-size: 16px;
-  color: #06142A;
+  color: #06142a;
   line-height: 30px;
   padding-left: 15px;
 }
@@ -219,7 +219,7 @@
 }
 
 .product-details .short-description ul > li {
-  color: #06142A;
+  color: #06142a;
   font-size: 16px;
   line-height: 33px;
   font-weight: lighter;
@@ -247,15 +247,15 @@
 }
 
 .product-details .cart-action .counter > input {
-  background-color: #F4F9FE;
-  border: 1px solid #E7E9EE;
+  background-color: #f4f9fe;
+  border: 1px solid #e7e9ee;
   border-radius: 9px;
   max-width: 111px;
   height: 39px;
 }
 
 .product-details .cart-action button {
-  color: #1192F8;
+  color: #1192f8;
   font-size: 16px;
   font-weight: lighter;
   line-height: 19.2px;
@@ -271,7 +271,7 @@
 
 .services {
   padding: 115px 50px;
-  background-color: #F6F8FA;
+  background-color: #f6f8fa;
 }
 
 .services .row {
@@ -313,7 +313,7 @@
 }
 
 .technical-specification > .container > .row {
-  border: 1px solid #D0D2D6;
+  border: 1px solid #d0d2d6;
   border-radius: 24px;
 }
 
@@ -438,5 +438,149 @@
 .get-payment-cloud-product-details .btn-white > a {
   width: 336px;
   font-size: 18px;
+}
+
+.customer-review {
+  background-color: #f4f9fe;
+  padding: 118px 0 155px;
+}
+
+.customer-review h2 > span {
+  color: #1192f8;
+  display: block;
+}
+
+.customer-review h1 {
+  font-size: 120px;
+  font-weight: lighter;
+}
+
+.customer-review h1 > span {
+  font-size: 48px;
+}
+
+.customer-review .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  margin-top: 11.5px;
+  margin-bottom: 16px;
+}
+
+.customer-review .reviews .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.customer-review .reviews .ratings .icon-container,
+.customer-review .reviews .ratings .icon-container-half,
+.customer-review .reviews .ratings .icon-container-blank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15px;
+  width: 15px;
+}
+
+.customer-review .reviews .ratings .icon-container img,
+.customer-review .reviews .ratings .icon-container-half img,
+.customer-review .reviews .ratings .icon-container-blank img {
+  height: 16px;
+  width: 16px;
+}
+
+.customer-review .reviews span {
+  color: #06142a;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: lighter;
+}
+
+.customer-review .review-images {
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.customer-review .review-container h1 {
+  font-size: 44px;
+  line-height: 52.8px;
+  margin-bottom: 33px;
+}
+
+.customer-review .review-container .review-list {
+  background-color: #ffffff;
+  border: 1px solid #d0d2d6;
+  border-radius: 15px;
+  padding: 44px 30px;
+}
+
+.customer-review .review-container .review-list > .review-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  border-bottom: 1px solid #e7e9ee;
+  padding: 30px;
+}
+
+.customer-review .review-container .review-list > .review-item:first-child {
+  padding-top: 0;
+}
+
+.customer-review .review-container .review-list > .review-item:last-child {
+  border-bottom: none;
+}
+
+.customer-review .review-container .review-list > .review-item > .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.customer-review .review-container .review-list > .review-item > .customer > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.customer-review .review-container .review-list > .review-item > .customer > div > .h5 {
+  font-weight: 500;
+}
+
+.customer-review .review-container .review-list > .review-item > .customer > div > p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.customer-review .review-container .review-list > .review-item > .customer > div > .reviews {
+  margin-top: 2px;
+}
+
+.customer-review .review-container .review-list > .review-item .review-details > h5 {
+  margin-bottom: 15px;
+}
+
+.customer-review .review-container .review-list > .review-item .review-details > p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=productStyles.css.map */
