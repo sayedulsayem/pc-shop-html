@@ -1,936 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link
-      href="./assets/fonts/GothamBook.ttf?family=GothamBook"
-      rel="stylesheet"
-    />
-    <link href="./assets/fonts/MINGLIU.ttf?family=MINGLIU" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>PC Shop</title>
-  </head>
 
-  <body>
-    <!-- Navigation Menu Section start -->
-    <section class="nav-section-wrapper">
-      <div class="container nav-section">
-        <div class="row">
-          <div class="col-7 col-lg-3 d-flex align-items-center logo-container">
-            <div class="logo">
-              <img
-                src="./assets/images/PC-Logo copy.png"
-                class="img-fluid"
-                alt="PaymentCloud Logo"
-              />
-            </div>
-            <img src="./assets/images/divider.png" alt="" />
-            <a class="ash-primary fw-normal link" href="#">shop</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link href="./assets/fonts/GothamBook.ttf?family=GothamBook" rel="stylesheet" />
+  <link href="./assets/fonts/MINGLIU.ttf?family=MINGLIU" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>PC Shop</title>
+</head>
+
+<body>
+  <!-- Navigation Menu Section start -->
+  <section class="nav-section-wrapper">
+    <div class="container nav-section">
+      <div class="row">
+        <div class="col-7 col-lg-3 d-flex align-items-center logo-container">
+          <div class="logo">
+            <img src="./assets/images/PC-Logo copy.png" class="img-fluid" alt="PaymentCloud Logo" />
           </div>
-          <div class="d-none col-lg-6 d-lg-flex align-items-center">
-            <div class="search-field input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Find the best for your business..."
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-              />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                <img src="./assets/images/Layer 60.png" alt="" />
-              </button>
-            </div>
+          <img src="./assets/images/divider.png" alt="" />
+          <a class="ash-primary fw-normal link" href="#">shop</a>
+        </div>
+        <div class="d-none col-lg-6 d-lg-flex align-items-center">
+          <div class="search-field input-group">
+            <input type="text" class="form-control" placeholder="Find the best for your business..."
+              aria-label="Recipient's username" aria-describedby="button-addon2" />
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+              <img src="./assets/images/Layer 60.png" alt="" />
+            </button>
           </div>
-          <div
-            class="col-12 col-lg-3 position-relative d-block d-lg-flex flex-lg-row justify-content-start justify-content-lg-end align-items-center gap-xl-2"
-          >
-            <nav class="navbar navbar-expand-lg ml-0 mr-auto bg-transparent">
-              <button
-                class="navbar-toggler position-absolute top-0 end-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item d-flex align-items-center">
-                    <a
-                      class="fw-semibold nav-link text-end active dark-text"
-                      href=""
-                      aria-current="page"
-                      >+88945308</a
-                    >
-                  </li>
-                  <li class="nav-item d-none d-lg-block">
-                    <img src="./assets/images/divider.png" alt="" />
-                  </li>
-                  <li class="nav-item d-flex align-items-center">
-                    <a class="fw-semibold nav-link text-end dark-text" href=""
-                      >YOUR CART</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <span
-              class="cart-icon-container position-relative mx-2"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseWidthExample"
-              aria-expanded="false"
-              aria-controls="collapseWidthExample"
-            >
-              <img src="./assets/images/Layer 8.png" alt="" />
-              <span class="cart-total-container position-absolute">
-                <span
-                  class="cart-total d-flex align-items-center justify-content-center"
-                  >0</span
-                >
-              </span>
+        </div>
+        <div
+          class="col-12 col-lg-3 position-relative d-block d-lg-flex flex-lg-row justify-content-start justify-content-lg-end align-items-center gap-xl-2">
+          <nav class="navbar navbar-expand-lg ml-0 mr-auto bg-transparent">
+            <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item d-flex align-items-center">
+                  <a class="fw-semibold nav-link text-end active dark-text" href="" aria-current="page">+88945308</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <img src="./assets/images/divider.png" alt="" />
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <span class="cart-icon-container position-relative mx-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <img src="./assets/images/Layer 8.png" alt="" />
+            <span class="cart-total-container position-absolute">
+              <span class="cart-total d-flex align-items-center justify-content-center">0</span>
             </span>
-          </div>
-          <div>
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="cart-container">
-                <div class="cart-wrapper">
-                  <!-- cart cross icon and text -->
-                  <div
-                    class="d-flex align-items-start justify-content-between close-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseWidthExample"
-                    aria-expanded="false"
-                    aria-controls="collapseWidthExample"
-                  >
-                    <h3>Your Cart</h3>
-                    <span><img src="./assets/images/close.png" alt="" /></span>
+          </span>
+        </div>
+        <div>
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="cart-container">
+              <div class="cart-wrapper">
+                <!-- cart cross icon and text -->
+                <div class="d-flex align-items-start justify-content-between close-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false"
+                  aria-controls="collapseWidthExample">
+                  <h3>Your Cart</h3>
+                  <span><img src="./assets/images/close.png" alt="" /></span>
+                </div>
+                <!-- cart item one -->
+                <div class="d-flex gap-4 justify-content-around">
+                  <div class="img-container">
+                    <img src="./assets/images/product.png" alt="" />
                   </div>
-                  <!-- cart item one -->
-                  <div class="d-flex gap-4 justify-content-around">
-                    <div class="img-container">
-                      <img src="./assets/images/product.png" alt="" />
+                  <div class="d-flex flex-column gap-3">
+                    <h4>Ingenico ICT220 Card Reader</h4>
+                    <div class="counter">
+                      <span><img src="./assets/images/minus.png" alt="" /></span>
+                      <span>
+                        <input type="number" value="2" />
+                      </span>
+                      <span><img src="./assets/images/plus.png" alt="" /></span>
                     </div>
-                    <div class="d-flex flex-column gap-3">
-                      <h4>Ingenico ICT220 Card Reader</h4>
-                      <div class="counter">
-                        <span
-                          ><img src="./assets/images/minus.png" alt=""
-                        /></span>
-                        <span>
-                          <input type="number" value="2" />
-                        </span>
-                        <span
-                          ><img src="./assets/images/plus.png" alt=""
-                        /></span>
+                  </div>
+                  <div class="price d-flex align-items-end">$250.00</div>
+                </div>
+                <!-- cart item two -->
+                <div class="d-flex gap-4 justify-content-around">
+                  <div class="img-container">
+                    <img src="./assets/images/product.png" alt="" />
+                  </div>
+                  <div class="d-flex flex-column gap-3">
+                    <h4>Ingenico ICT220 Card Reader</h4>
+                    <div class="counter">
+                      <span><img src="./assets/images/minus.png" alt="" /></span>
+                      <span>
+                        <input type="number" value="2" />
+                      </span>
+                      <span><img src="./assets/images/plus.png" alt="" /></span>
+                    </div>
+                  </div>
+                  <div class="price d-flex align-items-end">$250.00</div>
+                </div>
+                <!-- subtotal section -->
+                <div class="subtotal">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h4>Subtotal</h4>
+                    <h4>$500</h4>
+                  </div>
+                  <div class="accordion" id="cart-accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-header d-flex align-items-center justify-content-between" id="headingOne">
+                        <img class="tick-active" src="./assets/images/Layer 61.svg" alt="" />
+                        <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          qualify for your free terminal
+                        </button>
                       </div>
-                    </div>
-                    <div class="price d-flex align-items-end">$250.00</div>
-                  </div>
-                  <!-- cart item two -->
-                  <div class="d-flex gap-4 justify-content-around">
-                    <div class="img-container">
-                      <img src="./assets/images/product.png" alt="" />
-                    </div>
-                    <div class="d-flex flex-column gap-3">
-                      <h4>Ingenico ICT220 Card Reader</h4>
-                      <div class="counter">
-                        <span
-                          ><img src="./assets/images/minus.png" alt=""
-                        /></span>
-                        <span>
-                          <input type="number" value="2" />
-                        </span>
-                        <span
-                          ><img src="./assets/images/plus.png" alt=""
-                        /></span>
-                      </div>
-                    </div>
-                    <div class="price d-flex align-items-end">$250.00</div>
-                  </div>
-                  <!-- subtotal section -->
-                  <div class="subtotal">
-                    <div
-                      class="d-flex align-items-center justify-content-between"
-                    >
-                      <h4>Subtotal</h4>
-                      <h4>$500</h4>
-                    </div>
-                    <div class="accordion" id="cart-accordion">
-                      <div class="accordion-item">
-                        <div
-                          class="accordion-header d-flex align-items-center justify-content-between"
-                          id="headingOne"
-                        >
-                          <img
-                            class="tick-active"
-                            src="./assets/images/Layer 61.svg"
-                            alt=""
-                          />
-                          <button
-                            class="accordion-button text-uppercase"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            qualify for your free terminal
-                          </button>
-                        </div>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#cart-accordion"
-                        >
-                          <div class="accordion-body">
-                            <h4>Get a Merchant Account</h4>
-                            <form action="">
-                              <div class="form-container">
-                                <img src="./assets/images/user.png" alt="" />
-                                <input
-                                  class="form-control"
-                                  id="firstName"
-                                  type="text"
-                                  placeholder="First Name"
-                                />
-                              </div>
-                              <div class="form-container">
-                                <img src="./assets/images/user.png" alt="" />
-                                <input
-                                  class="form-control"
-                                  id="lastName"
-                                  type="text"
-                                  placeholder="Last Name"
-                                />
-                              </div>
-                              <div class="form-container">
-                                <img src="./assets/images/email.png" alt="" />
-                                <input
-                                  class="form-control"
-                                  id="email"
-                                  type="text"
-                                  placeholder="Email"
-                                />
-                              </div>
-                              <div class="form-container">
-                                <img src="./assets/images/phone.png" alt="" />
-                                <input
-                                  class="form-control"
-                                  id="exampleFormControlInput1"
-                                  type="text"
-                                  placeholder="+1 Phone Number"
-                                />
-                              </div>
-                              <select
-                                class="form-select"
-                                aria-label="Default select example"
-                              >
-                                <option selected>Time In Business</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                              <button class="btn-yellow" type="submit">
-                                SUBMIT
-                              </button>
-                            </form>
-                          </div>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#cart-accordion">
+                        <div class="accordion-body">
+                          <h4>Get a Merchant Account</h4>
+                          <form action="">
+                            <div class="form-container">
+                              <img src="./assets/images/user.png" alt="" />
+                              <input class="form-control" id="firstName" type="text" placeholder="First Name" />
+                            </div>
+                            <div class="form-container">
+                              <img src="./assets/images/user.png" alt="" />
+                              <input class="form-control" id="lastName" type="text" placeholder="Last Name" />
+                            </div>
+                            <div class="form-container">
+                              <img src="./assets/images/email.png" alt="" />
+                              <input class="form-control" id="email" type="text" placeholder="Email" />
+                            </div>
+                            <div class="form-container">
+                              <img src="./assets/images/phone.png" alt="" />
+                              <input class="form-control" id="exampleFormControlInput1" type="text"
+                                placeholder="+1 Phone Number" />
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Time In Business</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <button class="btn-yellow" type="submit">
+                              SUBMIT
+                            </button>
+                          </form>
                         </div>
                       </div>
                     </div>
-                    <div class="btn-white mt-0 text-uppercase">
-                      <a href="">check out now</a>
-                    </div>
-                    <p>Shipping and taxes calculated at checkout.</p>
                   </div>
+                  <div class="btn-white mt-0 text-uppercase">
+                    <a href="">check out now</a>
+                  </div>
+                  <p>Shipping and taxes calculated at checkout.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row gap-2 gap-lg-0">
-          <div class="col-12 col-lg-5 d-flex align-items-center">
-            <nav class="navbar navbar-expand p-0 bg-transparent">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span>shop by type</span>
-                      <img src="./assets/images/down-arrow.svg" alt="" />
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item Montserrat" href="#">Action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item Montserrat" href="#"
-                          >Another action</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item Montserrat" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span>shop by brand</span>
-                      <img
-                        class="dropdown-icon"
-                        src="./assets/images/down-arrow.svg"
-                        alt=""
-                      />
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item Montserrat" href="#">Action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item Montserrat" href="#"
-                          >Another action</a
-                        >
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div
-            class="col-12 col-lg-7 d-flex align-items-center justify-content-start justify-content-lg-end"
-          >
-            <div class="message">
-              <img
-                class="tick-active"
-                src="./assets/images/Layer 61.svg"
-                alt=""
-              />
-              <p>GET YOUR FREE TERMINAL WITH A MERCHANT ACCOUNT</p>
-              <img
-                class="arrow-img"
-                src="./assets/images/right-arrow.png"
-                alt=""
-              />
+      </div>
+      <div class="row gap-2 gap-lg-0">
+        <div class="col-12 col-lg-5 d-flex align-items-center">
+          <nav class="navbar navbar-expand p-0 bg-transparent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>shop by type</span>
+                    <img src="./assets/images/down-arrow.svg" alt="" />
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item Montserrat" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item Montserrat" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item Montserrat" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>shop by brand</span>
+                    <img class="dropdown-icon" src="./assets/images/down-arrow.svg" alt="" />
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item Montserrat" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item Montserrat" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </nav>
+        </div>
+        <div class="col-12 col-lg-7 d-flex align-items-center justify-content-start justify-content-lg-end">
+          <div class="message">
+            <img class="tick-active" src="./assets/images/Layer 61.svg" alt="" />
+            <p>GET YOUR FREE TERMINAL WITH A MERCHANT ACCOUNT</p>
+            <img class="arrow-img" src="./assets/images/right-arrow.png" alt="" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- Navigation Menu Section end -->
+    </div>
+  </section>
+  <!-- Navigation Menu Section end -->
 
-    <!-- Hero Section starts from here -->
-    <header class="cover">
-      <div class="caption-container">
-        <div class="caption">
-          <h1 class="fw-lighter">
-            Get any of these terminals for
-            <span class="fst-italic fw-semibold">FREE</span> with a merchant
-            account
-          </h1>
-          <p class="fw-lighter">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <!-- Hero Section starts from here -->
+  <header class="cover">
+    <div class="container">
+      <div class="caption">
+        <h1 class="fw-lighter">
+          Get any of these terminals for
+          <span class="fst-italic fw-semibold">FREE</span> with a merchant
+          account
+        </h1>
+        <p class="fw-lighter">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="btn-yellow fw-regular" href="">Get Started</a>
+      </div>
+      <img src="./assets/images/cover.png" alt="" />
+    </div>
+  </header>
+  <!-- Hero Section ends here -->
+
+  <!-- Review section starts from here -->
+  <section class="review">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-5">
+        <div class="col d-flex flex-column align-items-center align-items-lg-start">
+          <img src="./assets/images/Layer 66.png" alt="" />
+          <div class="ratings">
+            <div class="icon-container">
+              <img src="./assets/images/star.png" alt="" />
+            </div>
+            <div class="icon-container">
+              <img src="./assets/images/star.png" alt="" />
+            </div>
+            <div class="icon-container">
+              <img src="./assets/images/star.png" alt="" />
+            </div>
+            <div class="icon-container-half">
+              <img src="./assets/images/star.png" alt="" />
+            </div>
+            <div class="icon-container-blank">
+              <img src="./assets/images/star.png" alt="" />
+            </div>
+          </div>
+          <p class="review-details">
+            <span>TrustScore <span>4.4</span></span> |
+            <span><span>157</span> reviews</span>
           </p>
-          <a class="btn-yellow fw-regular" href="">Get Started</a>
         </div>
-        <img src="./assets/images/cover.png" alt="" />
-      </div>
-    </header>
-    <!-- Hero Section ends here -->
-
-    <!-- Review section starts from here -->
-    <section class="review">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-lg-5">
-          <div
-            class="col d-flex flex-column align-items-center align-items-lg-start"
-          >
-            <img src="./assets/images/Layer 66.png" alt="" />
-            <div class="ratings">
-              <div class="icon-container">
-                <img src="./assets/images/star.png" alt="" />
+        <div class="col d-none d-lg-block">
+          <div class="card">
+            <div class="d-flex flex-fill justify-content-between align-items-center">
+              <div class="ratings d-flex align-items-center justify-content-center">
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container-half">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container-blank">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
               </div>
-              <div class="icon-container">
-                <img src="./assets/images/star.png" alt="" />
-              </div>
-              <div class="icon-container">
-                <img src="./assets/images/star.png" alt="" />
-              </div>
-              <div class="icon-container-half">
-                <img src="./assets/images/star.png" alt="" />
-              </div>
-              <div class="icon-container-blank">
-                <img src="./assets/images/star.png" alt="" />
-              </div>
+              <p class="mb-0">April 19</p>
             </div>
-            <p class="review-details">
-              <span>TrustScore <span>4.4</span></span> |
-              <span><span>157</span> reviews</span>
+            <h4>Tina</h4>
+            <h2 class="fw-semibold">
+              There was excellent customer service...
+            </h2>
+            <p>
+              There was excellent customer service and everyone explained the
+              process clearly.
             </p>
           </div>
-          <div class="col d-none d-lg-block">
-            <div class="card">
-              <div
-                class="d-flex flex-fill justify-content-between align-items-center"
-              >
-                <div
-                  class="ratings d-flex align-items-center justify-content-center"
-                >
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container-half">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container-blank">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                </div>
-                <p class="mb-0">April 19</p>
-              </div>
-              <h4>Tina</h4>
-              <h2 class="fw-semibold">
-                There was excellent customer service...
-              </h2>
-              <p>
-                There was excellent customer service and everyone explained the
-                process clearly.
-              </p>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
-            <div class="card">
-              <div
-                class="d-flex flex-fill justify-content-between align-items-center"
-              >
-                <div
-                  class="ratings d-flex align-items-center justify-content-center"
-                >
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                </div>
-                <p class="mb-0">April 19</p>
-              </div>
-              <h4>Tina</h4>
-              <h2 class="fw-semibold">
-                There was excellent customer service...
-              </h2>
-              <p>
-                There was excellent customer service and everyone explained the
-                process clearly.
-              </p>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
-            <div class="card">
-              <div
-                class="d-flex flex-fill justify-content-between align-items-center"
-              >
-                <div
-                  class="ratings d-flex align-items-center justify-content-center"
-                >
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                </div>
-                <p class="mb-0">April 19</p>
-              </div>
-              <h4>Tina</h4>
-              <h2 class="fw-semibold">
-                There was excellent customer service...
-              </h2>
-              <p>
-                There was excellent customer service and everyone explained the
-                process clearly.
-              </p>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
-            <div class="card">
-              <div
-                class="d-flex flex-fill justify-content-between align-items-center"
-              >
-                <div
-                  class="ratings d-flex align-items-center justify-content-center"
-                >
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                  <div class="icon-container">
-                    <img src="./assets/images/star.png" alt="" />
-                  </div>
-                </div>
-                <p class="mb-0">April 19</p>
-              </div>
-              <h4>Tina</h4>
-              <h2 class="fw-semibold">
-                There was excellent customer service...
-              </h2>
-              <p>
-                There was excellent customer service and everyone explained the
-                process clearly.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- Review section ends here -->
-
-    <!-- Products Section starts from here -->
-    <section class="products">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-5">
-          <div class="col-12 col-lg-6">
-            <div class="card">
-              <h2 class="text-center">POS <span>Systems</span></h2>
-              <div
-                class="row flex-column-reverse flex-lg-row text-center text-lg-left"
-              >
-                <div class="col-12 col-lg-6 text-center text-lg-start">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a href="" class="btn-white">Explore</a>
+        <div class="col d-none d-lg-block">
+          <div class="card">
+            <div class="d-flex flex-fill justify-content-between align-items-center">
+              <div class="ratings d-flex align-items-center justify-content-center">
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
                 </div>
-                <div class="col-12 col-lg-6">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/Layer 79.png"
-                    alt=""
-                  />
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
                 </div>
               </div>
+              <p class="mb-0">April 19</p>
             </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="card">
-              <h2 class="text-center">POS <span>Systems</span></h2>
-              <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-12 col-lg-6 text-center text-lg-start">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a href="" class="btn-white">Explore</a>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/Layer 79.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="card">
-              <h2 class="text-center">POS <span>Systems</span></h2>
-              <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-12 col-lg-6 text-center text-lg-start">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a href="" class="btn-white">Explore</a>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <img
-                    class="img-fluid"
-                    src="./assets/images/Layer 79.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 text-center text-lg-start">
-            <div class="card">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt.
-              </p>
-              <a class="text-center text-md-start" href=""
-                >View them all
-                <img
-                  class="img-fluid d-none d-lg-inline m-4"
-                  src="./assets/images/Layer 72 copy 2.png"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Products Section starts from here -->
-
-    <!-- Clients section starts from here -->
-    <section class="clients">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="swiper mySwiper d-md-none">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/images/Layer 73.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-button-next">
-                <img src="./assets/images/right.png" alt="" />
-              </div>
-              <div class="swiper-button-prev">
-                <img src="./assets/images/left.png" alt="" />
-              </div>
-            </div>
-            <div class="image-wrapper d-none d-md-flex">
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-              <img src="./assets/images/Layer 73.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Clients section ends here -->
-
-    <!-- Get Payment cloud section starts from here -->
-    <section class="get-payment-cloud">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col d-flex align-items-center justify-content-center flex-column"
-          >
-            <img src="./assets/images/PC-Logo copy 2.png" alt="" />
-            <h2>SWITCH TO PAYMENTCLOUD AND SAVE HUNDREDS ON PROCESSING</h2>
-            <a class="btn-yellow" href="">GET A FREE RATE REVIEW</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Get Payment cloud section ends here -->
-
-    <!-- Terminals section starts from here -->
-    <section class="terminals">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-8">
-            <img class="img-fluid" src="./assets/images/Layer 84.png" alt="" />
-          </div>
-          <div class="col-12 col-lg-4">
-            <h2>
-              Terminals Run Better
-              <span>With PaymentCloud</span>
+            <h4>Tina</h4>
+            <h2 class="fw-semibold">
+              There was excellent customer service...
             </h2>
-            <ul>
-              <li>Cash Discount Program</li>
-              <li>Cash Discount Program</li>
-              <li>Cash Discount Program</li>
-              <li>Cash Discount Program</li>
-              <li>Cash Discount Program</li>
-              <li>Cash Discount Program</li>
-            </ul>
-            <a class="btn-white" href="">VIEW ALL TERMINALS</a>
+            <p>
+              There was excellent customer service and everyone explained the
+              process clearly.
+            </p>
+          </div>
+        </div>
+        <div class="col d-none d-lg-block">
+          <div class="card">
+            <div class="d-flex flex-fill justify-content-between align-items-center">
+              <div class="ratings d-flex align-items-center justify-content-center">
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+              </div>
+              <p class="mb-0">April 19</p>
+            </div>
+            <h4>Tina</h4>
+            <h2 class="fw-semibold">
+              There was excellent customer service...
+            </h2>
+            <p>
+              There was excellent customer service and everyone explained the
+              process clearly.
+            </p>
+          </div>
+        </div>
+        <div class="col d-none d-lg-block">
+          <div class="card">
+            <div class="d-flex flex-fill justify-content-between align-items-center">
+              <div class="ratings d-flex align-items-center justify-content-center">
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+                <div class="icon-container">
+                  <img src="./assets/images/star.png" alt="" />
+                </div>
+              </div>
+              <p class="mb-0">April 19</p>
+            </div>
+            <h4>Tina</h4>
+            <h2 class="fw-semibold">
+              There was excellent customer service...
+            </h2>
+            <p>
+              There was excellent customer service and everyone explained the
+              process clearly.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Terminals section ends here -->
+    </div>
+  </section>
+  <!-- Review section ends here -->
 
-    <!-- Faq section starts from here -->
-    <section class="faq">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Frequently <span>Asked Questions</span></h2>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    I don’t use checks, what can I send instead?
-                  </button>
-                </h3>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
+  <!-- Products Section starts from here -->
+  <section class="products">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 gy-5">
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <h2 class="text-center">POS <span>Systems</span></h2>
+            <div class="row flex-column-reverse flex-lg-row text-center text-lg-left">
+              <div class="col-12 col-lg-6 text-center text-lg-start">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="" class="btn-white">Explore</a>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img class="img-fluid" src="./assets/images/Layer 79.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <h2 class="text-center">POS <span>Systems</span></h2>
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-12 col-lg-6 text-center text-lg-start">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="" class="btn-white">Explore</a>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img class="img-fluid" src="./assets/images/Layer 79.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <h2 class="text-center">POS <span>Systems</span></h2>
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-12 col-lg-6 text-center text-lg-start">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="" class="btn-white">Explore</a>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img class="img-fluid" src="./assets/images/Layer 79.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt.
+            </p>
+            <a class="text-center text-md-start" href="">View them all
+              <img class="img-fluid d-none d-lg-inline m-4" src="./assets/images/Layer 72 copy 2.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section ends here -->
+
+  <!-- Clients section starts from here -->
+  <section class="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="swiper mySwiper d-md-none">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Layer 73.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="./assets/images/right.png" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./assets/images/left.png" alt="" />
+            </div>
+          </div>
+          <div class="image-wrapper d-none d-md-flex">
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+            <img src="./assets/images/Layer 73.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Clients section ends here -->
+
+  <!-- Get Payment cloud section starts from here -->
+  <section class="get-payment-cloud">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex align-items-center justify-content-center flex-column">
+          <img src="./assets/images/PC-Logo copy 2.png" alt="" />
+          <h2>SWITCH TO PAYMENTCLOUD AND SAVE HUNDREDS ON PROCESSING</h2>
+          <a class="btn-yellow" href="">GET A FREE RATE REVIEW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Payment cloud section ends here -->
+
+  <!-- Terminals section starts from here -->
+  <section class="terminals">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <img class="img-fluid" src="./assets/images/Layer 84.png" alt="" />
+        </div>
+        <div class="col-12 col-lg-4">
+          <h2>
+            Terminals Run Better
+            <span>With PaymentCloud</span>
+          </h2>
+          <ul>
+            <li>Cash Discount Program</li>
+            <li>Cash Discount Program</li>
+            <li>Cash Discount Program</li>
+            <li>Cash Discount Program</li>
+            <li>Cash Discount Program</li>
+            <li>Cash Discount Program</li>
+          </ul>
+          <a class="btn-white" href="">VIEW ALL TERMINALS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Terminals section ends here -->
+
+  <!-- Faq section starts from here -->
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Frequently <span>Asked Questions</span></h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  I don’t use checks, what can I send instead?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any
+                  of this with custom CSS or overriding our default variables.
+                  It's also worth noting that just about any HTML can go
+                  within the <code>.accordion-body</code>, though the
+                  transition does limit overflow.
                 </div>
               </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    My banker won’t provide a bank letter, what should I do?
-                  </button>
-                </h3>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  My banker won’t provide a bank letter, what should I do?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong>
+                  It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any
+                  of this with custom CSS or overriding our default variables.
+                  It's also worth noting that just about any HTML can go
+                  within the <code>.accordion-body</code>, though the
+                  transition does limit overflow.
                 </div>
               </div>
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Why do you need to see bank statements?
-                  </button>
-                </h3>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Why do you need to see bank statements?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any
+                  of this with custom CSS or overriding our default variables.
+                  It's also worth noting that just about any HTML can go
+                  within the <code>.accordion-body</code>, though the
+                  transition does limit overflow.
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Faq section ends here -->
+    </div>
+  </section>
+  <!-- Faq section ends here -->
 
-    <!-- Footer started form here -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div
-              class="get-pricing d-flex flex-column flex-md-row align-items-center justify-content-between"
-            >
-              <div>
-                <h3>Ready To Get Started?</h3>
-                <p>Compare our rates to others you've found.</p>
-              </div>
-              <a class="btn-yellow" href="">Get Pricing</a>
-            </div>
-          </div>
-        </div>
-        <div class="row footer-bottom">
-          <div class="col d-flex align-items-center gap-4">
-            <img src="./assets/images/Layer 54.png" alt="" />
+  <!-- Footer started form here -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="get-pricing d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div>
-              <p class="mb-0">Copyright 2022 PaymentCloud.</p>
-              <p>All Rights Reserved.</p>
+              <h3>Ready To Get Started?</h3>
+              <p>Compare our rates to others you've found.</p>
             </div>
-          </div>
-          <div
-            class="col d-flex align-items-center justify-content-center gap-3 gap-xl-5"
-          >
-            <img src="./assets/images/Layer 50.png" alt="" />
-            <img src="./assets/images/Layer 51.png" alt="" />
-            <img src="./assets/images/Layer 52.png" alt="" />
-            <img src="./assets/images/Layer 53.png" alt="" />
-          </div>
-          <div
-            class="col d-flex justify-content-center justify-content-xl-end align-items-center"
-          >
-            <ul>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Sitemap</a></li>
-              <li><a href="">Privacy</a></li>
-              <li><a href="">Terms</a></li>
-            </ul>
+            <a class="btn-yellow" href="">Get Pricing</a>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer ends here -->
+      <div class="row footer-bottom">
+        <div class="col d-flex align-items-center gap-4">
+          <img src="./assets/images/Layer 54.png" alt="" />
+          <div>
+            <p class="mb-0">Copyright 2022 PaymentCloud.</p>
+            <p>All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center gap-3 gap-xl-5">
+          <img src="./assets/images/Layer 50.png" alt="" />
+          <img src="./assets/images/Layer 51.png" alt="" />
+          <img src="./assets/images/Layer 52.png" alt="" />
+          <img src="./assets/images/Layer 53.png" alt="" />
+        </div>
+        <div class="col d-flex justify-content-center justify-content-xl-end align-items-center">
+          <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
 
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script src="./assets/js/functions.js"></script>
-  </body>
+  <!-- Initialize Swiper -->
+  <script src="./assets/js/functions.js"></script>
+</body>
+
 </html>
