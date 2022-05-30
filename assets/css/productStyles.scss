@@ -287,6 +287,51 @@
 // Technical Specification styles starts form here
 .technical-specification {
     padding: 120px 0 160px;
+    & > .container{
+        &>h1{
+            font-size: 44px;
+            margin-bottom: 33px;
+        }
+        & > .row{
+            border: 1px solid #D0D2D6;
+            border-radius: 24px;
+            .product-image{
+                background: #c6d4e2;
+                border-radius: 24px;
+                margin: 56px;
+                padding: 20px;
+            }
+            .spec-col{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 35px;
+                & > .spec-item{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 15px;
+                    width: 100%;
+                    padding: 0 20% 0 0;
+                    & > h5{
+                        padding-left: 30px;
+                    }
+                    & > div{
+                        column-gap: 15px;
+                        & > img{
+                            transform: rotate(270deg);
+                        }
+                        & > p{
+                            font-size: 22px;
+                            color: #4c5b74;
+                            border-bottom: 1px solid #e5eaf1;
+                            width: 100%;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Get payment cloud section starts from here

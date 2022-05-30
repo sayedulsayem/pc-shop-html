@@ -28,6 +28,12 @@ h4 {
   line-height: 26.4px;
 }
 
+h5 {
+  font-size: 18.71px;
+  font-weight: 700;
+  color: #06142a;
+}
+
 p {
   color: #06142a;
   font-size: 17px;
