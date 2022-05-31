@@ -315,6 +315,7 @@
             column-gap: 15px;
             & > img {
               transform: rotate(270deg);
+              margin-bottom: 10px;
             }
             & > p {
               font-size: 22px;
@@ -392,6 +393,7 @@
   }
 }
 
+// Customer review starts from here
 .customer-review {
   background-color: #f4f9fe;
   padding: 118px 0 155px;
@@ -500,6 +502,60 @@
           }
         }
       }
+    }
+  }
+  .pagination{
+    margin-top: 15px;
+    column-gap: 10px;
+    & > .page-item{
+        height: 35px;
+        width: 35px;
+        & > .disabled{
+          background-color: #cfd1d7;
+          border: 1px solid #cfd1d7;
+        }
+        & > .page-link{
+          border-radius: 4px;
+        }
+        & > .page-link{
+          border: 1px solid #e7e9ee;
+          color: #535154;
+          &:hover,&:active,&:focus{
+            background-color: #0c5f8b;
+            border: 1px solid #0c5f8b;
+            color: #ffffff;
+            box-shadow: none;
+          }
+        }
+        &:first-child{
+          & > .page-link{
+            & > img{
+              transform: rotate(180deg);
+            }
+          }
+        }
+        &:last-child{
+          & > .page-link{
+            background-color: #0c5f8b;
+            border: 1px solid #0c5f8b;
+          }
+        }
+      }
+    
+  }
+}
+
+// Related Products starts from here
+.related-products{
+  padding-top: 166px;
+  padding-bottom: 100px;
+  h2{
+    text-align: center;
+    font-size: 44px;
+    font-weight: lighter;
+    margin-bottom: 62px;
+    & > span{
+      font-weight: 700;
     }
   }
 }
