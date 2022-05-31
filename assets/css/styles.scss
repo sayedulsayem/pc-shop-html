@@ -196,6 +196,7 @@ body {
   top: 0;
   left: 0;
   z-index: 5;
+  backdrop-filter: blur(3px);
 
   .cart-wrapper {
     overflow-y: scroll;
@@ -651,6 +652,11 @@ body {
   background-color: #e2e7eb;
   position: relative;
   & > .container {
+
+    @media (min-width: 2560px) {
+      position: relative;
+    }
+
     @media (max-width: 768px) {
       display: flex;
       flex-direction: column-reverse;
@@ -776,35 +782,24 @@ body {
     }
 
     & > img {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 41.5%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
 
-      @media (max-width: 1920px) {
-        width: 55.5%;
-      }
-
-      @media (max-width: 1600px) {
-        width: 66.5%;
-      }
-
-      @media (max-width: 1440px) {
-        width: 64%;
-      }
-
-      object-fit: cover;
-
-      @media (max-width: 768px) {
-        width: 100%;
-        position: relative;
-      }
-      @media (max-width: 425px) {
-        width: 103%;
-      }
-      @media (max-width: 375px) {
-        width: 103.5%;
-      }
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        @media (max-width: 425px) {
+          width: 103%;
+        }
+        @media (max-width: 375px) {
+          width: 103.5%;
+        }
     }
   }
 }
