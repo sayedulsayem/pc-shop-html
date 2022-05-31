@@ -22,6 +22,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
 var swiper3 = new Swiper(".mySwiper3", {
   loop: true,
   spaceBetween: 10,
