@@ -937,6 +937,13 @@ body
 
     background-color: #e2e7eb;
 }
+@media (min-width: 2560px)
+{
+    .cover > .container
+    {
+        position: relative;
+    }
+}
 @media (max-width: 768px)
 {
     .cover > .container
@@ -1148,31 +1155,11 @@ body
     top: 0;
     right: 0;
 
-    width: 41.5%;
+    width: auto;
+    height: 100%;
 
     -o-object-fit: cover;
        object-fit: cover;
-}
-@media (max-width: 1920px)
-{
-    .cover > .container > img
-    {
-        width: 55.5%;
-    }
-}
-@media (max-width: 1600px)
-{
-    .cover > .container > img
-    {
-        width: 66.5%;
-    }
-}
-@media (max-width: 1440px)
-{
-    .cover > .container > img
-    {
-        width: 64%;
-    }
 }
 @media (max-width: 768px)
 {
@@ -1181,6 +1168,7 @@ body
         position: relative;
 
         width: 100%;
+        height: auto;
     }
 }
 @media (max-width: 425px)
