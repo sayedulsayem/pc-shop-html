@@ -693,4 +693,17 @@
   -webkit-column-gap: 5px;
           column-gap: 5px;
 }
+
+.related-products .swiper > .swiper-wrapper > .swiper-slide .price > .discount-price {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.related-products .swiper > .swiper-wrapper > .swiper-slide .price > .discount-amount {
+  color: #828282;
+  font-size: 30px;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=productStyles.css.map */
