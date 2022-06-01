@@ -623,6 +623,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav-section-wrapper .nav-section > .row .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
   .nav-section-wrapper .nav-section > .row .cart-icon-container {
     position: absolute !important;
     top: -45px;
@@ -653,6 +659,13 @@ body {
 .nav-section-wrapper .nav-section > .row .cart-icon-container .cart-total-container > .cart-total {
   font-size: 12px;
   line-height: 18px;
+}
+
+.nav-section-wrapper .nav-section > .row .phone-icon-container {
+  top: -45px;
+  right: 95px;
+  height: 28px;
+  width: 25px;
 }
 
 .nav-section-wrapper .nav-section > .row .navbar-expand > .collapse > .navbar-nav {

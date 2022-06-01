@@ -45,25 +45,72 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item d-flex align-items-center">
+                <li class="nav-item d-flex align-items-center d-none d-lg-block">
                   <a class="fw-semibold nav-link text-end active dark-text" href="" aria-current="page">+88945308</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
                   <img src="./assets/images/divider.png" alt="" />
                 </li>
-                <li class="nav-item d-flex align-items-center">
+                <li class="nav-item d-flex align-items-center d-none d-lg-block">
                   <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
                 </li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold dark-text dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center" href="#"
+                      id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>shop by type</span>
+                      <img src="./assets/images/down-arrow.svg" alt="" />
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item Montserrat" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item Montserrat" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item Montserrat" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold dark-text dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center" href="#"
+                      id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>shop by brand</span>
+                      <img class="dropdown-icon" src="./assets/images/down-arrow.svg" alt="" />
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item Montserrat" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item Montserrat" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </ul>
             </div>
           </nav>
-          <span class="cart-icon-container position-relative mx-2" type="button" data-bs-toggle="collapse"
+          <a href="" class="phone-icon-container d-lg-none position-absolute mx-2">
+            <img src="./assets/images/phone-icon.png" alt="" />
+          </a>
+          <a class="cart-icon-container position-relative mx-2" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
             <img src="./assets/images/Layer 8.png" alt="" />
             <span class="cart-total-container position-absolute">
               <span class="cart-total d-flex align-items-center justify-content-center">0</span>
             </span>
-          </span>
+          </a>
         </div>
         <div>
           <div class="collapse collapse-horizontal" id="collapseWidthExample">
@@ -173,7 +220,7 @@
       </div>
       <div class="row gap-2 gap-lg-0">
         <div class="col-12 col-lg-5 d-flex align-items-center">
-          <nav class="navbar navbar-expand p-0 bg-transparent">
+          <nav class="navbar navbar-expand d-none d-lg-block p-0 bg-transparent">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">

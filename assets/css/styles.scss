@@ -526,6 +526,9 @@ body {
             @media (max-width: 1024px) {
               font-size: 12px;
             }
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -559,6 +562,12 @@ body {
             line-height: 18px;
           }
         }
+      }
+      .phone-icon-container{
+        top: -45px;
+        right: 95px;
+        height: 28px;
+        width: 25px;
       }
 
       .navbar-expand {
