@@ -1,18 +1,15 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    300: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 30,
     },
     1200: {
@@ -27,6 +24,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   spaceBetween: 0,
+  centeredSlides: true,
   // navigation: {
   //   nextEl: ".swiper-button-next",
   //   prevEl: ".swiper-button-prev",
@@ -39,12 +37,22 @@ var swiper2 = new Swiper(".mySwiper2", {
 var swiper = new Swiper(".relatedProducts", {
   loop: true,
   spaceBetween: 10,
-  slidesPerView: 3,
+  slidesPerView: 1,
   freeMode: true,
   watchSlidesProgress: true,
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  768: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+  },
+  1200: {
+    slidesPerView: 3,
+    spaceBetween: 30,
   },
 });
 

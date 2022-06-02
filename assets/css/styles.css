@@ -262,6 +262,12 @@ body {
   line-height: 33px;
 }
 
+@media (max-width: 1024px) {
+  .cart-container .cart-wrapper h3 {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 425px) {
   .cart-container .cart-wrapper h3 {
     font-size: 20px;

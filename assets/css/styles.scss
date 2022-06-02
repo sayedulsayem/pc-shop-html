@@ -230,6 +230,9 @@ body {
       margin-bottom: 60px;
       font-size: 28px;
       line-height: 33px;
+      @media (max-width: 1024px) {
+        font-size: 24px;
+      }
       @media (max-width: 425px) {
         font-size: 20px;
       }

@@ -82,6 +82,9 @@
     font-weight: 500;
     line-height: 52.8px;
     margin-top: 40px;
+    @media (max-width: 1024px) {
+      font-size: 26px;
+    }
   }
 
   .reviews {
@@ -126,20 +129,33 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
-
+    @media (max-width: 1024px) {
+      column-gap: 10px;
+      font-size: 22px;
+      line-height: 26px;
+    }
     .reg-price {
       padding-left: 20px;
+      @media (max-width: 1024px) {
+        padding-left: 10px;
+      }
     }
 
     .discount-amount {
       font-size: 17px;
       font-weight: 500;
       color: #1192f8;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
 
     .message {
       font-size: 15px;
       font-weight: lighter;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -155,6 +171,10 @@
       color: #06142a;
       line-height: 30px;
       padding-left: 15px;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        padding-left: 10px;
+      }
     }
   }
 
@@ -165,6 +185,9 @@
 
     p {
       line-height: 29px;
+      @media (max-width: 1024px) {
+        font-size: 15px;
+      }
     }
 
     ul {
@@ -178,6 +201,9 @@
         line-height: 33px;
         font-weight: lighter;
         padding-left: 10px;
+        @media (max-width: 1024px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -188,6 +214,10 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 21.6px;
+    @media (max-width: 1024px) {
+      height: 47px;
+      font-size: 16px;
+    }
   }
 
   .cart-action {
@@ -247,6 +277,9 @@
     p {
       max-width: 386px;
       margin: 0 auto;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
 
     .service-description {
@@ -254,6 +287,9 @@
       padding: 0 7%;
       font-size: 18px;
       line-height: 34px;
+      @media (max-width: 1024px) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -261,10 +297,17 @@
 // Technical Specification styles starts form here
 .technical-specification {
   padding: 120px 0 160px;
+  @media (max-width: 1024px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   & > .container {
     & > h1 {
       font-size: 44px;
       margin-bottom: 33px;
+      @media (max-width: 1024px) {
+        font-size: 26px;
+      }
     }
     & > .row {
       border: 1px solid #d0d2d6;
@@ -274,26 +317,43 @@
         border-radius: 24px;
         margin: 56px;
         padding: 20px;
+        @media (max-width: 1024px) {
+          margin: 20px 10px;
+        }
       }
       .spec-col {
         display: flex;
         align-items: center;
         flex-direction: column;
         row-gap: 35px;
+        @media (max-width: 1024px) {
+          row-gap: 15px;
+        }
         & > .spec-item {
           display: flex;
           flex-direction: column;
           row-gap: 15px;
           width: 100%;
           padding: 0 20% 0 0;
+          @media (max-width: 1024px) {
+            row-gap: 10px;
+          }
           & > h5 {
             padding-left: 30px;
+            @media (max-width: 1024px) {
+              font-size: 15px;
+            }
           }
           & > div {
             column-gap: 15px;
+            align-items: center;
             & > img {
               transform: rotate(270deg);
               margin-bottom: 10px;
+              @media (max-width: 1024px) {
+                height: 15px;
+                width: 10px;
+              }
             }
             & > p {
               font-size: 22px;
@@ -301,6 +361,10 @@
               border-bottom: 1px solid #e5eaf1;
               width: 100%;
               padding-bottom: 10px;
+              @media (max-width: 1024px) {
+                font-size: 14px;
+                padding-bottom: 2px;
+              }
             }
           }
         }
@@ -321,15 +385,18 @@
   padding: 100px 750px 120px;
 
   @media (max-width: 1920px) {
-    padding: 100px 300px 120px;
+    padding: 100px 450px 120px;
   }
 
   @media (max-width: 1600px) {
-    padding: 100px 200px 120px;
+    padding: 100px 300px 120px;
   }
 
   @media (max-width: 1440px) {
-    padding: 100px 120px 120px;
+    padding: 100px 200px 120px;
+  }
+  @media (max-width: 768px) {
+    padding: 100px 100px 120px;
   }
 
   @media (max-width: 767px) {
@@ -346,6 +413,10 @@
     color: #ffffff;
     margin-top: 30px;
 
+    @media (max-width: 1024px) {
+      font-size: 36px;
+      line-height: 56px;
+    }
     @media (max-width: 767px) {
       font-size: 30px;
       line-height: 36px;
@@ -362,12 +433,8 @@
   .btn-yellow,
   .btn-white {
     width: 306px;
+    margin: 0 auto;
     margin-top: 30px;
-
-    & > a {
-      width: 336px;
-      font-size: 18px;
-    }
   }
 }
 
@@ -380,12 +447,18 @@
       color: #1192f8;
       display: block;
     }
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
   }
   h1 {
     font-size: 120px;
     font-weight: lighter;
     & > span {
       font-size: 48px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 100px;
     }
   }
   .reviews {
@@ -407,6 +480,10 @@
         justify-content: center;
         height: 15px;
         width: 15px;
+        @media (max-width: 1024px) {
+          height: 12px;
+          width: 12px;
+        }
 
         img {
           height: 16px;
@@ -424,23 +501,44 @@
   }
   .review-images {
     column-gap: 10px;
+    img {
+      border-radius: 12px;
+      @media (max-width: 1024px) {
+        max-width: 20%;
+      }
+    }
   }
   .review-container {
     h1 {
       font-size: 44px;
       line-height: 52.8px;
       margin-bottom: 33px;
+      @media (max-width: 1024px) {
+        font-size: 26px;
+        & > span,
+        & > strong {
+          font-size: 26px;
+        }
+      }
     }
     .review-list {
       background-color: #ffffff;
       border: 1px solid #d0d2d6;
       border-radius: 15px;
       padding: 44px 30px;
+      @media (max-width: 1024px) {
+        padding: 20px;
+      }
       & > .review-item {
         display: flex;
         column-gap: 60px;
         border-bottom: 1px solid #e7e9ee;
         padding: 30px;
+        @media (max-width: 1024px) {
+          column-gap: 40px;
+          padding-left: 0;
+          padding-right: 0;
+        }
         &:first-child {
           padding-top: 0;
         }
@@ -477,6 +575,9 @@
             font-size: 18px;
             line-height: 30px;
             font-weight: 500;
+            @media (max-width: 1024px) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -533,8 +634,12 @@
     font-size: 44px;
     font-weight: lighter;
     margin-bottom: 62px;
-    & > span {
+    & > span,
+    & > strong {
       font-weight: 700;
+    }
+    @media (max-width: 1024px) {
+      font-size: 26px;
     }
   }
   .swiper {
@@ -547,6 +652,11 @@
     & > .swiper-wrapper {
       & > .swiper-slide {
         width: min-content !important;
+        & > h3 {
+          @media (max-width: 1024px) {
+            font-size: 24px;
+          }
+        }
         .img-container {
           width: 408px;
           height: 344px;
@@ -555,6 +665,9 @@
           border-radius: 24px;
           margin-bottom: 40px;
           padding: 20px;
+          @media (max-width: 1024px) {
+            margin-bottom: 20px;
+          }
           & > img {
             max-width: 100%;
             max-height: 100%;
@@ -570,9 +683,25 @@
           padding-bottom: 20px;
           border-bottom: 1px solid #dcdcdc;
           margin-bottom: 10px;
+          @media (max-width: 1024px) {
+            // margin-top: 5px;
+            // margin-bottom: 5px;
+          }
           & > .ratings {
             display: flex;
             column-gap: 5px;
+            & > .icon-container,
+            & > .icon-container-half,
+            & > .icon-container-blank {
+              height: 15px;
+              width: 15px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              & > img {
+                max-width: 100%;
+              }
+            }
           }
         }
         .price {
@@ -580,12 +709,18 @@
             font-size: 50px;
             font-weight: 500;
             line-height: 60px;
+            @media (max-width: 1024px) {
+              font-size: 46px;
+            }
           }
           & > .discount-amount {
             color: #828282;
             font-size: 30px;
             text-decoration: line-through;
             margin-left: 10px;
+            @media (max-width: 1024px) {
+              font-size: 26px;
+            }
           }
         }
       }
