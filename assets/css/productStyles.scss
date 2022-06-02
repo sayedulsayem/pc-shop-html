@@ -1,5 +1,6 @@
 // Product details starts from here
 .product-details {
+  margin-top: 216px;
   padding: 48px 0;
 
   nav {
@@ -74,36 +75,13 @@
         }
       }
     }
-
-    .large-slider {
-      max-height: 612px;
-    }
-
-    .small-slider {
-      max-height: 140px;
-
-      .swiper-wrapper {
-        max-height: 130px;
-
-        .swiper-slide {
-          border-radius: 24px;
-          width: 150px !important;
-          background: #fff;
-          border: 1px solid #f6f8fa;
-          box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.04);
-
-          img {
-            max-width: 100%;
-          }
-        }
-      }
-    }
   }
 
   .title {
     font-size: 44px;
     font-weight: 500;
     line-height: 52.8px;
+    margin-top: 40px;
   }
 
   .reviews {
@@ -568,7 +546,7 @@
     }
     & > .swiper-wrapper {
       & > .swiper-slide {
-        min-width: min-content;
+        width: min-content !important;
         .img-container {
           width: 408px;
           height: 344px;
@@ -597,13 +575,13 @@
             column-gap: 5px;
           }
         }
-        .price{
-          & > .discount-price{
+        .price {
+          & > .discount-price {
             font-size: 50px;
             font-weight: 500;
             line-height: 60px;
           }
-          & > .discount-amount{
+          & > .discount-amount {
             color: #828282;
             font-size: 30px;
             text-decoration: line-through;

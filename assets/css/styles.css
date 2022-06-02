@@ -262,10 +262,22 @@ body {
   line-height: 33px;
 }
 
+@media (max-width: 425px) {
+  .cart-container .cart-wrapper h3 {
+    font-size: 20px;
+  }
+}
+
 .cart-container .cart-wrapper h4 {
   font-size: 20px;
   line-height: 24px;
   color: #003174;
+}
+
+@media (max-width: 425px) {
+  .cart-container .cart-wrapper h4 {
+    font-size: 16px;
+  }
 }
 
 .cart-container .cart-wrapper .counter {
@@ -360,6 +372,12 @@ body {
   color: #ff9900;
   text-transform: uppercase;
   padding: 0;
+}
+
+@media (max-width: 425px) {
+  .cart-container .cart-wrapper .subtotal .accordion .accordion-item .accordion-header button {
+    font-size: 11px;
+  }
 }
 
 .cart-container .cart-wrapper .subtotal .accordion .accordion-item .accordion-header button :active,
@@ -482,6 +500,7 @@ body {
 .cart-container .cart-wrapper .subtotal .btn-white {
   width: 333px;
   height: 55px;
+  margin: 0 auto;
 }
 
 .cart-container .cart-wrapper .subtotal .btn-white > a {
@@ -494,7 +513,7 @@ body {
   -webkit-box-shadow: 2.5px 4.33px 5px 0px #00000012;
           box-shadow: 2.5px 4.33px 5px 0px #00000012;
   background-color: #f6f8fa;
-  z-index: 2;
+  z-index: 5;
 }
 
 @media (max-width: 1440px) {
@@ -523,18 +542,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 22px;
 }
 
 @media (max-width: 768px) {
   .nav-section-wrapper .nav-section {
-    row-gap: 0;
+    row-gap: 0px;
   }
 }
 
 @media (max-width: 600px) {
   .nav-section-wrapper .nav-section {
     padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-section-wrapper .nav-section > .row {
+    row-gap: 5px;
   }
 }
 
@@ -555,6 +580,18 @@ body {
   }
 }
 
+.nav-section-wrapper .nav-section > .row .hide-search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-section-wrapper .nav-section > .row .hide-search-field {
+    display: none;
+  }
+}
+
 .nav-section-wrapper .nav-section > .row .search-field {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
@@ -563,6 +600,22 @@ body {
   height: 52px;
   font-family: 'MINGLIU', sans-serif;
   background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav-section-wrapper .nav-section > .row .search-field {
+    border-radius: 30px;
+    height: 35px;
+    background-color: #f2f4f6;
+    border-color: #e7ecf0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 10px;
+    -webkit-transition: all 0.65s ease;
+    transition: all 0.65s ease;
+    margin-top: 5px;
+    margin-bottom: 22px;
+  }
 }
 
 .nav-section-wrapper .nav-section > .row .search-field > ::-webkit-input-placeholder {
@@ -599,6 +652,7 @@ body {
 
 .nav-section-wrapper .nav-section > .row .search-field > input {
   border: none;
+  background-color: transparent;
 }
 
 .nav-section-wrapper .nav-section > .row .search-field > input:focus {
@@ -612,8 +666,12 @@ body {
   border: none;
 }
 
-.nav-section-wrapper .nav-section > .row .search-field > button:hover {
+.nav-section-wrapper .nav-section > .row .search-field > button:hover, .nav-section-wrapper .nav-section > .row .search-field > button:focus {
   background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 1024px) {
@@ -661,11 +719,17 @@ body {
   line-height: 18px;
 }
 
-.nav-section-wrapper .nav-section > .row .phone-icon-container {
+.nav-section-wrapper .nav-section > .row .phone-icon-container,
+.nav-section-wrapper .nav-section > .row .search-icon-container {
   top: -45px;
   right: 95px;
   height: 28px;
   width: 25px;
+}
+
+.nav-section-wrapper .nav-section > .row .search-icon-container {
+  right: 140px;
+  cursor: pointer;
 }
 
 .nav-section-wrapper .nav-section > .row .navbar-expand > .collapse > .navbar-nav {
@@ -796,6 +860,13 @@ body {
 .cover {
   background-color: #e2e7eb;
   position: relative;
+  margin-top: 216px;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    margin-top: 207px;
+  }
 }
 
 @media (min-width: 2560px) {
@@ -1655,7 +1726,7 @@ body {
 }
 
 .woocommerce-checkout .site-content {
-  margin-top: 60px;
+  margin-top: 266px;
   margin-bottom: 140px;
 }
 

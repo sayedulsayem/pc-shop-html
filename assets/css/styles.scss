@@ -230,12 +230,18 @@ body {
       margin-bottom: 60px;
       font-size: 28px;
       line-height: 33px;
+      @media (max-width: 425px) {
+        font-size: 20px;
+      }
     }
 
     h4 {
       font-size: 20px;
       line-height: 24px;
       color: #003174;
+      @media (max-width: 425px) {
+        font-size: 16px;
+      }
     }
 
     .counter {
@@ -322,6 +328,9 @@ body {
               color: #ff9900;
               text-transform: uppercase;
               padding: 0;
+              @media (max-width: 425px) {
+                font-size: 11px;
+              }
 
               :active,
               :focus {
@@ -425,7 +434,7 @@ body {
       .btn-white {
         width: 333px;
         height: 55px;
-
+        margin: 0 auto;
         & > a {
           font-size: 18px;
           font-weight: 500;
@@ -438,12 +447,8 @@ body {
 .nav-section-wrapper {
   padding: 49px 70px 36px;
   box-shadow: 2.5px 4.33px 5px 0px #00000012;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
   background-color: #f6f8fa;
-  z-index: 2;
+  z-index: 5;
 
   @media (max-width: 1440px) {
     padding: 49px 40px 36px;
@@ -460,10 +465,10 @@ body {
   .nav-section {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 22px;
 
     @media (max-width: 768px) {
-      row-gap: 0;
+      row-gap: 0px;
     }
 
     @media (max-width: 600px) {
@@ -471,6 +476,9 @@ body {
     }
 
     & > .row {
+      @media (max-width: 768px) {
+        row-gap: 5px;
+      }
       & > .logo-container {
         column-gap: 10px;
 
@@ -484,7 +492,12 @@ body {
           }
         }
       }
-
+      .hide-search-field {
+        display: flex;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
       .search-field {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
         border-radius: 8px;
@@ -492,6 +505,17 @@ body {
         height: 52px;
         font-family: 'MINGLIU', sans-serif;
         background-color: #ffffff;
+        @media (max-width: 768px) {
+          border-radius: 30px;
+          height: 35px;
+          background-color: #f2f4f6;
+          border-color: #e7ecf0;
+          box-shadow: none;
+          padding: 0 10px;
+          transition: all 0.65s ease;
+          margin-top: 5px;
+          margin-bottom: 22px;
+        }
 
         & > ::placeholder {
           color: #797979;
@@ -503,6 +527,7 @@ body {
 
         & > input {
           border: none;
+          background-color: transparent;
 
           &:focus {
             border: none;
@@ -514,8 +539,12 @@ body {
         & > button {
           border: none;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: transparent;
+            border: none;
+            outline: none;
+            box-shadow: none;
           }
         }
       }
@@ -538,7 +567,7 @@ body {
           position: absolute !important;
           top: -45px;
           right: 50px;
-          & > img{
+          & > img {
             width: 26px;
             height: 28px;
           }
@@ -555,7 +584,6 @@ body {
           @media (max-width: 425px) {
             display: none;
           }
-          
 
           & > .cart-total {
             font-size: 12px;
@@ -563,11 +591,16 @@ body {
           }
         }
       }
-      .phone-icon-container{
+      .phone-icon-container,
+      .search-icon-container {
         top: -45px;
         right: 95px;
         height: 28px;
         width: 25px;
+      }
+      .search-icon-container {
+        right: 140px;
+        cursor: pointer;
       }
 
       .navbar-expand {
@@ -672,6 +705,10 @@ body {
 .cover {
   background-color: #e2e7eb;
   position: relative;
+  margin-top: 216px;
+  @media (max-width: 768px) {
+    margin-top: 207px;
+  }
   & > .container {
     @media (min-width: 2560px) {
       position: relative;
@@ -1395,7 +1432,7 @@ body {
 
 .woocommerce-checkout {
   .site-content {
-    margin-top: 60px;
+    margin-top: 266px;
     margin-bottom: 140px;
 
     @media (max-width: 768px) {
