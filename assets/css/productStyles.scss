@@ -338,6 +338,9 @@
           @media (max-width: 1024px) {
             row-gap: 10px;
           }
+          @media (max-width: 425px) {
+            padding: 0;
+          }
           & > h5 {
             padding-left: 30px;
             @media (max-width: 1024px) {
@@ -364,6 +367,9 @@
               @media (max-width: 1024px) {
                 font-size: 14px;
                 padding-bottom: 2px;
+              }
+              @media (max-width: 425px) {
+                font-size: 12px;
               }
             }
           }
@@ -538,6 +544,9 @@
           column-gap: 40px;
           padding-left: 0;
           padding-right: 0;
+        }
+        @media (max-width: 425px) {
+          flex-direction: column;
         }
         &:first-child {
           padding-top: 0;
