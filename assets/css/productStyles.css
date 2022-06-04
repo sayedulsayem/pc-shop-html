@@ -162,6 +162,16 @@
   }
 }
 
+@media (max-width: 425px) {
+  .product-details .price {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-details .price img {
+    display: none;
+  }
+}
+
 .product-details .price .reg-price {
   padding-left: 20px;
 }
@@ -192,6 +202,14 @@
 @media (max-width: 1024px) {
   .product-details .price .message {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product-details .price .message {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 17px;
   }
 }
 
@@ -270,6 +288,12 @@
   }
 }
 
+@media (max-width: 375px) {
+  .product-details .btn-yellow {
+    width: 100%;
+  }
+}
+
 .product-details .cart-action {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,6 +332,12 @@
 .services {
   padding: 115px 50px;
   background-color: #f6f8fa;
+}
+
+@media (max-width: 425px) {
+  .services {
+    padding: 62px 20px 52px;
+  }
 }
 
 .services .row {
@@ -351,6 +381,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .services .row .service-description {
+    padding: 0;
+  }
+}
+
 .technical-specification {
   padding: 120px 0 160px;
 }
@@ -359,6 +395,12 @@
   .technical-specification {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .technical-specification {
+    padding: 58px 20px 75px;
   }
 }
 
@@ -446,12 +488,25 @@
   }
 }
 
+@media (max-width: 375px) {
+  .technical-specification > .container > .row .spec-col > .spec-item > h5 {
+    padding-left: 20px;
+  }
+}
+
 .technical-specification > .container > .row .spec-col > .spec-item > div {
   -webkit-column-gap: 15px;
           column-gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 375px) {
+  .technical-specification > .container > .row .spec-col > .spec-item > div {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
 }
 
 .technical-specification > .container > .row .spec-col > .spec-item > div > img {
@@ -464,6 +519,12 @@
   .technical-specification > .container > .row .spec-col > .spec-item > div > img {
     height: 15px;
     width: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .technical-specification > .container > .row .spec-col > .spec-item > div > img {
+    margin-bottom: 2px;
   }
 }
 
@@ -825,6 +886,13 @@
   padding: 166px 56px 100px;
 }
 
+@media (max-width: 768px) {
+  .related-products {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .related-products h2 {
   text-align: center;
   font-size: 44px;
@@ -852,6 +920,25 @@
   width: -webkit-min-content !important;
   width: -moz-min-content !important;
   width: min-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 425px) {
+  .related-products .swiper > .swiper-wrapper > .swiper-slide {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -862,17 +949,24 @@
 
 .related-products .swiper > .swiper-wrapper > .swiper-slide .img-container {
   width: 408px;
-  height: 344px;
+  height: auto;
   border: 1px solid #f1f1f1;
   background-color: #ffffff;
   border-radius: 24px;
   margin-bottom: 40px;
   padding: 20px;
+  display: block;
 }
 
 @media (max-width: 1024px) {
   .related-products .swiper > .swiper-wrapper > .swiper-slide .img-container {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .related-products .swiper > .swiper-wrapper > .swiper-slide .img-container {
+    width: 100% !important;
   }
 }
 
@@ -896,6 +990,12 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #dcdcdc;
   margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+  .related-products .swiper > .swiper-wrapper > .swiper-slide .reviews {
+    width: 100%;
+  }
 }
 
 .related-products .swiper > .swiper-wrapper > .swiper-slide .reviews > .ratings {
@@ -932,6 +1032,12 @@
   font-size: 50px;
   font-weight: 500;
   line-height: 60px;
+}
+
+@media (max-width: 425px) {
+  .related-products .swiper > .swiper-wrapper > .swiper-slide .price > .discount-price {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {

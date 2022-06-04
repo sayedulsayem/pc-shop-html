@@ -35,25 +35,32 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 var swiper = new Swiper(".relatedProducts", {
-  loop: true,
-  spaceBetween: 10,
   slidesPerView: 1,
-  freeMode: true,
-  watchSlidesProgress: true,
+  spaceBetween: 40,
+  loop: true,
   centeredSlides: true,
+  disableOnInteraction: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  768: {
-    slidesPerView: 1,
-    spaceBetween: 30,
-  },
-  1200: {
-    slidesPerView: 3,
-    spaceBetween: 30,
-  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
 });
 
 // Close cart sidebar after clicking body

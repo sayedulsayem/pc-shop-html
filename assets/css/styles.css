@@ -208,8 +208,15 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("../images/hamburger.png");
-  max-height: 20px;
-  max-width: 14px;
+  max-height: 30px;
+  max-width: 20px;
+}
+
+@media (max-width: 425px) {
+  .navbar-toggler-icon {
+    max-height: 20px;
+    max-width: 14px;
+  }
 }
 
 .cart-container {
@@ -726,16 +733,23 @@ body {
   .nav-section-wrapper .nav-section > .row .cart-icon-container {
     position: absolute !important;
     top: -45px;
-    right: 50px;
+    right: 80px;
     padding: 2px 0;
-  }
-  .nav-section-wrapper .nav-section > .row .cart-icon-container > img {
-    width: 26px;
-    height: auto;
   }
 }
 
-@media (max-width: 768px) and (max-width: 425px) {
+@media (max-width: 425px) {
+  .nav-section-wrapper .nav-section > .row .cart-icon-container {
+    right: 50px;
+  }
+}
+
+.nav-section-wrapper .nav-section > .row .cart-icon-container > img {
+  width: 26px;
+  height: auto;
+}
+
+@media (max-width: 425px) {
   .nav-section-wrapper .nav-section > .row .cart-icon-container > img {
     width: 18px;
     height: auto;
@@ -766,7 +780,7 @@ body {
 .nav-section-wrapper .nav-section > .row .phone-icon-container,
 .nav-section-wrapper .nav-section > .row .search-icon-container {
   top: -45px;
-  right: 95px;
+  right: 135px;
   padding: 2px 0;
 }
 
@@ -792,7 +806,7 @@ body {
 }
 
 .nav-section-wrapper .nav-section > .row .search-icon-container {
-  right: 140px;
+  right: 200px;
   cursor: pointer;
 }
 

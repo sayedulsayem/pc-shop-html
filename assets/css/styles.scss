@@ -189,8 +189,12 @@ body {
 
 .navbar-toggler-icon {
   background-image: url('../images/hamburger.png');
-  max-height: 20px;
-  max-width: 14px;
+  max-height: 30px;
+  max-width: 20px;
+  @media (max-width: 425px) {
+    max-height: 20px;
+    max-width: 14px;
+  }
 }
 
 .cart-container {
@@ -597,16 +601,18 @@ body {
         @media (max-width: 768px) {
           position: absolute !important;
           top: -45px;
-          right: 50px;
+          right: 80px;
           padding: 2px 0;
-
-          & > img {
-            width: 26px;
+        }
+        @media (max-width: 425px) {
+          right: 50px;
+        }
+        & > img {
+          width: 26px;
+          height: auto;
+          @media (max-width: 425px) {
+            width: 18px;
             height: auto;
-            @media (max-width: 425px) {
-              width: 18px;
-              height: auto;
-            }
           }
         }
 
@@ -631,7 +637,7 @@ body {
       .phone-icon-container,
       .search-icon-container {
         top: -45px;
-        right: 95px;
+        right: 135px;
         padding: 2px 0;
         @media (max-width: 425px) {
           right: 85px;
@@ -646,7 +652,7 @@ body {
         }
       }
       .search-icon-container {
-        right: 140px;
+        right: 200px;
         cursor: pointer;
         @media (max-width: 425px) {
           right: 120px;
