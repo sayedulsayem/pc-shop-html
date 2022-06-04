@@ -1,0 +1,129 @@
+// checkout page
+
+.woocommerce-checkout {
+    .site-content {
+        margin-top: 266px;
+        margin-bottom: 140px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 100px;
+        }
+    }
+
+    .woocommerce-billing-fields {
+        margin-top: 65px;
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .order-details {
+        background-color: #f2f9ff;
+    }
+
+    #order_review_heading {
+        margin-top: 45px;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .woocommerce-checkout-review-order {
+        margin-top: 30px;
+    }
+
+    .woocommerce-checkout-review-order-table {
+        border-collapse: initial;
+        border-spacing: 30px 30px;
+
+        tr>*:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        tbody,
+        tfoot {
+            margin-top: 30px;
+        }
+    }
+
+    .woocommerce-checkout-payment {
+        margin-top: 30px;
+
+        .desk {
+            margin-left: 30px;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        .mob {
+            margin: auto auto;
+            display: none;
+
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+
+    .place-order {
+        margin-top: 30px;
+
+        .btn-white {
+            width: 390px;
+            height: 54px;
+            font-size: 18px;
+        }
+    }
+
+    .checkout-cta-banner {
+        margin: 40px auto;
+        width: 80%;
+        padding: 35px;
+        background-color: #fff8ec;
+        border: 1px solid #ff9900;
+        border-radius: 4px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 25px;
+        }
+
+        h5 {
+            color: #ff9900;
+        }
+
+        .btn-yellow {
+            width: 80%;
+            height: 54px;
+            font-size: 18px;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.billing-input-fields {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    input,
+    select {
+        background-color: #f6f8fa;
+    }
+
+    label+input {
+        margin-top: 10px;
+    }
+
+    label+select {
+        margin-top: 10px;
+    }
+
+    input+input {
+        margin-top: 10px;
+    }
+}

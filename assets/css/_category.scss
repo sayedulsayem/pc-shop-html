@@ -1,0 +1,35 @@
+// *************************** Cateogry Page Css ********************************//
+.category-sec {
+    padding-top: 100px;
+    padding-bottom: 226px;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        padding-right: 60px;
+
+        &>li {
+            border-bottom: 1px solid #e9e8e8;
+
+            &>a {
+                font-size: 17px;
+                color: #06142a;
+                padding: 22px 20px 26px;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            &:hover,
+            &:active {
+                border: 1px solid #003174;
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+
+                &:nth-child(n - 2) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
