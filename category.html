@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="./assets/fonts/GothamBook.ttf?family=GothamBook" rel="stylesheet" />
+    <link href="./assets/fonts/MINGLIU.ttf?family=MINGLIU" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>PC Shop</title>
+</head>
+
+<body>
+    <!-- Navigation Menu Section start -->
+    <section class="nav-section-wrapper fixed-top">
+        <div class="container nav-section">
+            <div class="row">
+                <div class="col-7 col-lg-3 d-flex align-items-center logo-container order-1">
+                    <div class="logo">
+                        <img src="./assets/images/PC-Logo copy.png" class="img-fluid" alt="PaymentCloud Logo" />
+                    </div>
+                    <img src="./assets/images/divider.png" alt="" />
+                    <a class="ash-primary fw-normal link" href="#">shop</a>
+                </div>
+                <div class="col-lg-6 d-lg-flex order-3 order-lg-2 align-items-center">
+                    <div class="search-field input-group">
+                        <input type="text" class="form-control" placeholder="Find the best for your business..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <img class="d-none d-lg-block" src="./assets/images/Layer 60.png" alt="" />
+                            <img class="d-lg-none" src="./assets/images/search-ash.png" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-lg-3 order-2 order-lg-3 position-relative d-block d-lg-flex flex-lg-row justify-content-start justify-content-lg-end align-items-center gap-xl-2">
+                    <nav class="navbar navbar-expand-lg ml-0 mr-auto bg-transparent">
+                        <button class="navbar-toggler position-absolute" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex align-items-center d-none d-lg-block">
+                                    <a class="fw-semibold nav-link text-end active dark-text" href="tel:+88945308"
+                                        aria-current="page">+88945308</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <img src="./assets/images/divider.png" alt="" />
+                                </li>
+                                <li class="nav-item d-flex align-items-center d-none d-lg-block">
+                                    <a class="fw-semibold nav-link text-end dark-text" href="">YOUR CART</a>
+                                </li>
+                                <ul class="navbar-nav mb-2 mb-lg-0 d-lg-none mobile-dropdown-menu">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link fw-semibold link-color dropdown-toggle Montserrat d-flex justify-content-between gap-2 gap-xl-3 align-items-center"
+                                            href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            shop by type
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Another action</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Something else here</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link fw-semibold link-color dropdown-toggle Montserrat d-flex justify-content-between gap-2 gap-xl-3 align-items-center"
+                                            href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            shop by brand
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Another action</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item link-color" href="#">Something else here</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </nav>
+                    <span class="search-icon-container hide-search-field d-lg-none position-absolute">
+                        <img src="./assets/images/search-dark.png" alt="" />
+                    </span>
+                    <a href="" class="phone-icon-container d-lg-none position-absolute">
+                        <img src="./assets/images/phone-icon.png" alt="" />
+                    </a>
+                    <a class="cart-icon-container position-relative" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        <img src="./assets/images/Layer 8.png" alt="" />
+                        <span class="cart-total-container position-absolute">
+                            <span class="cart-total d-flex align-items-center justify-content-center">0</span>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="cart-container">
+                            <div class="cart-wrapper">
+                                <!-- cart cross icon and text -->
+                                <div class="d-flex align-items-start justify-content-between close-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                                    aria-expanded="false" aria-controls="collapseWidthExample">
+                                    <h3>Your Cart</h3>
+                                    <span class="close-cart"><img src="./assets/images/close.png" alt="" /></span>
+                                </div>
+                                <!-- cart item one -->
+                                <div class="d-flex gap-4 justify-content-around">
+                                    <div class="img-container">
+                                        <img src="./assets/images/product.png" alt="" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <h4>Ingenico ICT220 Card Reader</h4>
+                                        <div class="counter">
+                                            <span><img src="./assets/images/minus.png" alt="" /></span>
+                                            <span>
+                                                <input type="number" value="2" />
+                                            </span>
+                                            <span><img src="./assets/images/plus.png" alt="" /></span>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-end">$250.00</div>
+                                </div>
+                                <!-- cart item two -->
+                                <div class="d-flex gap-4 justify-content-around">
+                                    <div class="img-container">
+                                        <img src="./assets/images/product.png" alt="" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <h4>Ingenico ICT220 Card Reader</h4>
+                                        <div class="counter">
+                                            <span><img src="./assets/images/minus.png" alt="" /></span>
+                                            <span>
+                                                <input type="number" value="2" />
+                                            </span>
+                                            <span><img src="./assets/images/plus.png" alt="" /></span>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex align-items-end">$250.00</div>
+                                </div>
+                                <!-- subtotal section -->
+                                <div class="subtotal">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Subtotal</h4>
+                                        <h4>$500</h4>
+                                    </div>
+                                    <div class="accordion" id="cart-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header d-flex align-items-center justify-content-between"
+                                                id="headingOne">
+                                                <img class="tick-active" src="./assets/images/Layer 61.svg" alt="" />
+                                                <button class="accordion-button text-uppercase" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    qualify for your free terminal
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#cart-accordion">
+                                                <div class="accordion-body">
+                                                    <h4>Get a Merchant Account</h4>
+                                                    <form action="">
+                                                        <div class="form-container">
+                                                            <img src="./assets/images/user.png" alt="" />
+                                                            <input class="form-control" id="firstName" type="text"
+                                                                placeholder="First Name" />
+                                                        </div>
+                                                        <div class="form-container">
+                                                            <img src="./assets/images/user.png" alt="" />
+                                                            <input class="form-control" id="lastName" type="text"
+                                                                placeholder="Last Name" />
+                                                        </div>
+                                                        <div class="form-container">
+                                                            <img src="./assets/images/email.png" alt="" />
+                                                            <input class="form-control" id="email" type="text"
+                                                                placeholder="Email" />
+                                                        </div>
+                                                        <div class="form-container">
+                                                            <img src="./assets/images/phone.png" alt="" />
+                                                            <input class="form-control" id="exampleFormControlInput1"
+                                                                type="text" placeholder="+1 Phone Number" />
+                                                        </div>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Time In Business</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <button class="btn-yellow" type="submit">
+                                                            SUBMIT
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-white mt-0 text-uppercase">
+                                        <a href="">check out now</a>
+                                    </div>
+                                    <p>Shipping and taxes calculated at checkout.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-2 gap-lg-0">
+                <div class="col-12 col-lg-5 d-flex align-items-center">
+                    <nav class="navbar navbar-expand d-none d-lg-block p-0 bg-transparent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>shop by type</span>
+                                        <img src="./assets/images/down-arrow.svg" alt="" />
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item Montserrat" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item Montserrat" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item Montserrat" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle Montserrat d-flex gap-2 gap-xl-3 align-items-center"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>shop by brand</span>
+                                        <img class="dropdown-icon" src="./assets/images/down-arrow.svg" alt="" />
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item Montserrat" href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item Montserrat" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-7 d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="message">
+                        <img class="tick-active" src="./assets/images/Layer 61.svg" alt="" />
+                        <p>GET YOUR FREE TERMINAL WITH A MERCHANT ACCOUNT</p>
+                        <img class="arrow-img" src="./assets/images/right-arrow.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Menu Section end -->
+
+    <!-- Hero Section starts from here -->
+    <header class="cover">
+        <div class="container">
+            <div class="caption">
+                <h1 class="fw-lighter">
+                    Get any of these terminals for
+                    <span class="fst-italic fw-semibold">FREE</span> with a merchant
+                    account
+                </h1>
+                <p class="fw-lighter">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-yellow fw-regular" href="">Get Started</a>
+            </div>
+            <img src="./assets/images/category-header.png" alt="" />
+        </div>
+    </header>
+    <!-- Hero Section ends here -->
+
+    <!-- Category section starts from here -->
+    <section class="category-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h3 class="text-uppercase">Category</h3>
+                    <ul>
+                        <li>
+                            <a href="">POS SYSTEMS</a>
+                        </li>
+                        <li>
+                            <a href="">CARD TERMINALS</a>
+                        </li>
+                        <li>
+                            <a href="">WIRELESS TERMINALS</a>
+                        </li>
+                        <li>
+                            <a href="">MOBILE TERMINALS</a>
+                        </li>
+                        <li>
+                            <a href="">PAYMENT ACCESSORIES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-8"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Category section ends here -->
+
+    <!-- Footer started form here -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="get-pricing d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <div>
+                            <h3>Ready To Get Started?</h3>
+                            <p>Compare our rates to others you've found.</p>
+                        </div>
+                        <a class="btn-yellow" href="">Get Pricing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom">
+                <div class="col d-flex align-items-center gap-4">
+                    <img src="./assets/images/Layer 54.png" alt="" />
+                    <div>
+                        <p class="mb-0">Copyright 2022 PaymentCloud.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center gap-3 gap-xl-5">
+                    <img src="./assets/images/Layer 50.png" alt="" />
+                    <img src="./assets/images/Layer 51.png" alt="" />
+                    <img src="./assets/images/Layer 52.png" alt="" />
+                    <img src="./assets/images/Layer 53.png" alt="" />
+                </div>
+                <div class="col d-flex justify-content-center justify-content-xl-end align-items-center">
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./assets/js/functions.js"></script>
+</body>
+
+</html>
