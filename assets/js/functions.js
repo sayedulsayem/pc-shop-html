@@ -109,8 +109,10 @@ function getVals() {
   // Neither slider will clip the other, so make sure we determine which is larger
   if (slide1 > slide2) { let tmp = slide2; slide2 = slide1; slide1 = tmp; }
 
-  let displayElement = parent.getElementsByClassName("rangeValues")[0];
-  displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
+  let minRangeValue = document.getElementsByClassName("minRangeValue")[0];
+  let maxRangeValue = document.getElementsByClassName("maxRangeValue")[0];
+  minRangeValue.innerHTML = "$" + slide1;
+  maxRangeValue.innerHTML = "$" + slide2;
 }
 
 window.onload = function () {
