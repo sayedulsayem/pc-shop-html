@@ -1,35 +1,149 @@
 // *************************** Cateogry Page Css ********************************//
 .category-sec {
-    padding-top: 100px;
-    padding-bottom: 226px;
+  padding-top: 100px;
+  padding-bottom: 226px;
 
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-bottom: 0;
-        padding-right: 60px;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-right: 60px;
+    margin-top: 32px;
 
-        &>li {
-            border-bottom: 1px solid #e9e8e8;
+    & > li {
+      border-bottom: 1px solid #e9e8e8;
 
-            &>a {
-                font-size: 17px;
-                color: #06142a;
-                padding: 22px 20px 26px;
-                text-decoration: none;
-                display: inline-block;
-            }
+      & > a {
+        font-size: 17px;
+        color: #06142a;
+        padding: 22px 20px 26px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+      }
 
-            &:hover,
-            &:active {
-                border: 1px solid #003174;
-                border-top-right-radius: 100px;
-                border-bottom-right-radius: 100px;
-
-                &:nth-child(n - 2) {
-                    border-bottom: none;
-                }
-            }
-        }
+      &:hover,
+      &:active {
+        border-bottom: none;
+        border: 2px solid #003174;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
     }
+  }
+  .mt-30{
+      margin-top: 30px;
+  }
+
+  .range-slider {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    .rangeValues {
+      display: block;
+    }
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    border: 1px solid #cbcbcb;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    border-radius: 30px;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 11px;
+    background: #dadada;
+    border: none;
+    border-radius: 30px;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #003174;
+    border: 3px solid #151f4b;
+    margin-top: -6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+
+  input[type='range']:focus {
+    outline: none;
+  }
+
+  input[type='range']:focus::-webkit-slider-runnable-track {
+    background: #dadada;
+  }
+
+  input[type='range']::-moz-range-track {
+    width: 300px;
+    height: 11px;
+    background: #dadada;
+    border: none;
+    border-radius: 30px;
+  }
+
+  input[type='range']::-moz-range-thumb {
+    border: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #003174;
+    border: 3px solid #151f4b;
+  }
+
+  /*hide the outline behind the border*/
+
+  input[type='range']:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+
+  input[type='range']::-ms-track {
+    width: 300px;
+    height: 11px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+    z-index: -4;
+  }
+
+  input[type='range']::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+  }
+
+  input[type='range']::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+  }
+
+  input[type='range']::-ms-thumb {
+    border: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #003174;
+    border: 3px solid #151f4b;
+  }
+
+  input[type='range']:focus::-ms-fill-lower {
+    background: #888;
+  }
+
+  input[type='range']:focus::-ms-fill-upper {
+    background: #ccc;
+  }
 }
