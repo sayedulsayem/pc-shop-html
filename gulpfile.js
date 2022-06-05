@@ -3,6 +3,7 @@ const sass = require("gulp-sass")((require('sass')));
 const csscomb = require("gulp-csscomb");
 const autoPrefixer = require("gulp-autoprefixer");
 const plumberNotifier = require("gulp-plumber-notifier");
+const concat = require("gulp-concat");
 
 
 const AUTOPREFIXER_BROWSERS = [
@@ -19,13 +20,21 @@ const AUTOPREFIXER_BROWSERS = [
 	"bb >= 10",
 ];
 
-const frontendSassFiles = "assets/css/styles.scss";
+const frontendSassFiles = [
+    "assets/css/header.scss",
+    "assets/css/home.scss",
+    "assets/css/checkout.scss",
+    "assets/css/category.scss",
+    "assets/css/product.scss",
+    "assets/css/footer.scss",
+];
 
 function makeFrontendCSS() {
 	return src(frontendSassFiles)
 		.pipe(plumberNotifier())
 		.pipe(sass())
 		.pipe(autoPrefixer(AUTOPREFIXER_BROWSERS))
+		.pipe(concat("styles.css"))
 		.pipe(csscomb())
 		.pipe(dest("assets/css"));
 }
