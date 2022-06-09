@@ -53,9 +53,14 @@ var swiper = new Swiper(".relatedProducts", {
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
+      centeredSlides: true,
     },
-    // when window width is >= 640px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 1440px
     1440: {
       slidesPerView: 3,
       spaceBetween: 40
@@ -129,3 +134,30 @@ window.onload = function () {
     }
   }
 }
+
+$(document).ready(function () {
+  $(".category-heading").click(function (e) {
+    e.stopPropagation();
+    if ($(".category-list").hasClass("d-block")) {
+      $(".category-list").removeClass("d-block");
+      $(".category-list").addClass("d-none");
+    } else {
+      $(".category-list").addClass("d-block");
+      $(".category-list").removeClass("d-none");
+    }
+
+  });
+});
+$(document).ready(function () {
+  $(".price-heading").click(function (e) {
+    e.stopPropagation();
+    if ($(".range-slider").hasClass("d-block")) {
+      $(".range-slider").removeClass("d-block");
+      $(".range-slider").addClass("d-none");
+    } else {
+      $(".range-slider").addClass("d-block");
+      $(".range-slider").removeClass("d-none");
+    }
+
+  });
+});
