@@ -148,15 +148,43 @@ $(document).ready(function () {
 
   });
 });
+
 $(document).ready(function () {
   $(".price-heading").click(function (e) {
     e.stopPropagation();
-    if ($(".range-slider").hasClass("d-block")) {
-      $(".range-slider").removeClass("d-block");
-      $(".range-slider").addClass("d-none");
+    if ($(window).width() < 700) {
+
+      if ($(".range-slider").hasClass("d-block")) {
+        $(".range-slider").removeClass("d-block");
+        $(".range-slider").addClass("d-none");
+        if ($(".brands").hasClass("mt-120")) {
+          $(".brands").removeClass("mt-120");
+          $(".brands").addClass("mt-30");
+        } else {
+          $(".brands").addClass("mt-120");
+          $(".brands").removeClass("mt-30");
+        }
+
+      } else {
+        $(".range-slider").addClass("d-block");
+        $(".range-slider").removeClass("d-none");
+        $(".brands").addClass("mt-120");
+        $(".brands").removeClass("mt-30");
+      }
+    }
+  });
+});
+
+
+$(document).ready(function () {
+  $(".brands").click(function (e) {
+    e.stopPropagation();
+    if ($(".form-check").hasClass("d-block")) {
+      $(".form-check").removeClass("d-block");
+      $(".form-check").addClass("d-none");
     } else {
-      $(".range-slider").addClass("d-block");
-      $(".range-slider").removeClass("d-none");
+      $(".form-check").addClass("d-block");
+      $(".form-check").removeClass("d-none");
     }
 
   });

@@ -313,7 +313,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3 col-xl-4">
-                    <h3 class="text-uppercase category-heading">Category</h3>
+                    <div class="category-heading">
+                        <h3 class="text-uppercase">Category</h3>
+                        <img class="d-md-none" src="./assets/images/down-arrow.png" alt="">
+                    </div>
                     <ul class="category-list d-none d-md-block">
                         <li>
                             <a href="">POS SYSTEMS</a>
@@ -332,7 +335,10 @@
                         </li>
                     </ul>
                     <!-- Price Range -->
-                    <h3 class="text-uppercase mt-30 price-heading">Price</h3>
+                    <div class="price-heading mt-30">
+                        <h3 class="text-uppercase">Price</h3>
+                        <img class="d-md-none" src="./assets/images/down-arrow.png" alt="">
+                    </div>
                     <div class="range-slider d-none d-md-block">
                         <div class="rangeValues">
                             <span class="minRangeValue"></span>
@@ -344,15 +350,18 @@
                             <button type="submit">Filter</button>
                         </form>
                     </div>
-                    <h3 class="text-uppercase mt-5 brands">brands</h3>
+                    <div class="brands mt-30">
+                        <h3 class="text-uppercase">brands</h3>
+                        <img class="d-md-none" src="./assets/images/down-arrow.png" alt="">
+                    </div>
                     <form action="">
-                        <div class="form-check">
+                        <div class="form-check d-none d-md-block">
                             <input class="form-check-input" type="checkbox" value="" id="INGENICO">
                             <label class="form-check-label" for="INGENICO">
                                 INGENICO
                             </label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check d-none d-md-block">
                             <input class="form-check-input" type="checkbox" value="" id="CLOVER">
                             <label class="form-check-label" for="CLOVER">
                                 CLOVER
@@ -546,6 +555,23 @@
                             </h1>
                         </a>
                     </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end d-md-none ">
+                            <li class="page-item ">
+                                <a class="page-link disabled">
+                                    <img src="./assets/images/arrow.png" alt="">
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">
+                                    <img src="./assets/images/arrow.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
